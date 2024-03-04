@@ -1,0 +1,96 @@
+-> Initial commands (Is required)
+  --> composer dump-autoload
+
+-> Development commands (It's not required)
+  --> js:minify
+  --> css:watch
+  --> css:minify
+
+-> Useful commands (It's not required)
+  --> composer install
+  --> composer update
+  --> yarn install (coming soon, this theme is coming alpha version!)
+  --> https://docs.npmjs.com/cli/v10/commands
+  --> https://classic.yarnpkg.com/en/docs/usage
+
+-> WP API (Essential)
+  --> REST API Developer Endpoint Reference
+    --> https://developer.wordpress.org/rest-api/reference/
+    --> https://developer.wordpress.org/rest-api/reference/#rest-api-developer-endpoint-reference
+    --> wp.api.models.Post / Page / Category / ...
+    --> wp.api.collections.Posts / Pages / Categories / ...
+
+  --> Backbone JavaScript Client
+    --> https://developer.wordpress.org/rest-api/using-the-rest-api/backbone-javascript-client/
+    --> wp.api.models.Post( 'Query collection of posts HERE!' )
+    --> wp.api.collections.Posts( 'Query collection of posts HERE!' )
+      --> Query collection of posts
+        --> context
+        --> page
+        --> per_page
+        --> search
+        --> after
+        --> modified_after
+        --> author
+        --> author_exclude
+        --> before
+        --> modified_before
+        --> exclude
+        --> include
+        --> offset
+        --> order
+        --> orderby
+        --> search_columns
+        --> slug
+        --> status
+        --> tax_relation
+        --> categories
+        --> categories_exclude
+        --> tags
+        --> tags_exclude
+        --> sticky
+        --> context
+        --> context
+        --> context
+
+  --> Global Parameters
+    --> https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/
+    --> _fields=""
+    --> _embed="" 
+
+  --> Linking and Embedding
+    --> https://developer.wordpress.org/rest-api/using-the-rest-api/linking-and-embedding/
+    --> _links
+    --> _embedded
+
+  --> SCHEMA (query parameter: Posts)
+    --> https://developer.wordpress.org/rest-api/glossary/#schema
+    --> https://developer.wordpress.org/rest-api/reference/posts/
+    --> (Posts) Query parameter _fields="Query parameter HERE!" / _embed="Query parameter HERE!"
+      --> date
+      --> date_gmt
+      --> guid
+      --> id
+      --> link
+      --> modified
+      --> modified_gmt
+      --> slug
+      --> status
+      --> password
+      --> permalink_template
+      --> generated_slug
+      --> title
+      --> content
+      --> author
+      --> excerpt
+      --> featured_media
+      --> wp:featuredmedia
+      --> wp:term
+      --> comment_status
+      --> ping_status
+      --> format
+      --> meta
+      --> sticky
+      --> template
+      --> categories
+      --> tags

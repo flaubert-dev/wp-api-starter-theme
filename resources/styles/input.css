@@ -1,0 +1,31 @@
+/*!
+  Theme Name:         WP API Starter Theme
+  Theme URI:          https://github.com/flaubert-dev/wp-api-starter-theme
+  Description:        WP API is a WordPress starter theme.
+  Version:            1.0.0
+  Author:             Flaubert Henriques
+  Author URI:         https: //github.com/flaubert-dev
+  License:            MIT License
+  License URI:        https://opensource.org/licenses/MIT
+  Requires PHP:       8.2
+  Requires at least:  WordPress 5.0
+  Tested up to:       WordPress 6.4
+
+  Credits (screenshot.png):
+    Image:        https://unsplash.com/pt-br/fotografias/pena-de-pavao-azul-e-verde-58Z17lnVS4U
+    Image author: https://unsplash.com/pt-br/@fakurian
+*/
+
+/* 
+  > tailwindcss v3.3.3
+  > directives (@base, @components, @utilities)
+  > download: https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3
+*/
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/**************
+  coming soon (This theme is coming alpha version!)
+**********/

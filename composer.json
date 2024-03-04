@@ -1,0 +1,19 @@
+{
+  "name": "wp/api",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "A Theme that uses the WP API",
+  "author": [{
+    "name": "Flaubert Henriques",
+    "email": "flaubertcontato@gmail.com",
+    "homepage": "https://github.com/flaubert-dev"
+  }],
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

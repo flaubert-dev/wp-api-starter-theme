@@ -1,0 +1,13 @@
+{
+  "name": "wp-api",
+  "version": "1.0.0",
+  "scripts": {
+    "js:minify": "uglifyjs ./resources/scripts/**/*.js -o ./resources/scripts/app.min.js",
+    "css:watch": "tailwindcss -i ./resources/styles/input.css -o ./style.css --watch",
+    "css:minify": "tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify",
+    "_comment" : "commands: yarn js:minify  yarn css:watch  yarn css:minify"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.14.1"
+  }
+}
