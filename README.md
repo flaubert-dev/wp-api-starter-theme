@@ -36,7 +36,7 @@ themes/your-theme-name/
 ├── app/                  
 │   ├── Acf/              
 │   ├── Contents/           
-│   └── ContentTemplates         
+│   └── ContentTemplates/         
 ├── config/                
 ├── resources/         
 │   ├── fonts/        
