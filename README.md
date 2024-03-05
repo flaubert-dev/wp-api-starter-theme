@@ -1,6 +1,6 @@
 # WP API Starter Theme (ALPHA VERSION 1.0.0)
 
-WordPress starter theme with [WP API](https://developer.wordpress.org/rest-api/) components and templates, Tailwind CSS and more...
+WordPress starter theme with [WP API](https://developer.wordpress.org/rest-api/) components and templates, [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli) and more...
 <br/>
 
 ## Sponsors
@@ -13,7 +13,7 @@ However, the amount of effort needed to maintain and develop new features and pr
 
 - Harness the power of [WP API](https://developer.wordpress.org/rest-api/).
 - Frontend development workflow.
-- Support for use for [Tailwind CSS](https://tailwindcss.com/).
+- Support for use for [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli).
 
 ## Requirements
 
