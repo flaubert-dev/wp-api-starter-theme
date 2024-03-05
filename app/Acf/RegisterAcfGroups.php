@@ -2,37 +2,30 @@
 
 namespace App\Acf;
 
-class RegisterAcfGroup
+class RegisterAcfGroups
 {
-  public function __construct( $name )
+  public function __construct()
   {
-    $prefix = 'app_';
+    $group_1 = 'group-1';
 
     acf_add_local_field_group([
-      'key'      => $prefix . $name,
+      'key'      => $group_1,
       'title'    => 'Example custom loop & text',
-      'location' => [
-        [
-          [
-            'param'    => 'post_template',
-            'operator' => '==',
-            'value'    => 'template-custom.php',
-          ]
-        ]
-      ],
-      'position'       => 'normal',
-      'style'          => 'default',
-      'hide_on_screen' => '',
+      'location' => [[[
+        'param'    => 'post_template',
+        'operator' => '==',
+        'value'    => 'template-custom.php',
+      ]]],
     ]);
 
     acf_add_local_field([
-      'key'          => $prefix . 'id',
+      'key'          => 'id',
       'label'        => 'Category ID',
       'name'         => 'id',
       'type'         => 'text',
       'instructions' => 'Enter the category ID',
       'required'     => 0,
-      'parent'       => $prefix . $name,
+      'parent'       => $group_1,
       'wrapper'      => [
         'width' => '',
         'class' => '',
@@ -46,13 +39,13 @@ class RegisterAcfGroup
     ]);
 
     acf_add_local_field([
-      'key'          => $prefix . 'perPage',
+      'key'          => 'perPage',
       'label'        => 'Posts per page',
       'name'         => 'perPage',
       'type'         => 'text',
       'instructions' => 'Enter the number',
       'required'     => 0,
-      'parent'       => $prefix . $name,
+      'parent'       => $group_1,
       'wrapper'      => [
         'width' => '',
         'class' => '',
@@ -66,13 +59,13 @@ class RegisterAcfGroup
     ]);
 
     acf_add_local_field([
-      'key'          => $prefix . 'theText',
+      'key'          => 'theText',
       'label'        => 'Test text',
       'name'         => 'theText',
       'type'         => 'text',
       'instructions' => 'Enter the text',
       'required'     => 0,
-      'parent'       => $prefix . $name,
+      'parent'       => $group_1,
       'wrapper'      => [
         'width' => '',
         'class' => '',

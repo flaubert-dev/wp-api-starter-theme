@@ -1,6 +1,6 @@
 <?php
 
-function the_wp_support() {
+function get_the_wp_support() {
   add_theme_support( 'title-tag' );
   
   add_theme_support( 'post-thumbnails' );
@@ -16,3 +16,5 @@ function the_wp_support() {
     'script'
   ]);
 }
+
+add_action( 'after_setup_theme', 'get_the_wp_support' );

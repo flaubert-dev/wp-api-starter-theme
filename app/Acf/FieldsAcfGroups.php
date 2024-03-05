@@ -2,7 +2,7 @@
 
 namespace App\Acf;
 
-class FieldsAcfGroup
+class FieldsAcfGroups
 {
   public function get_first_field()
   {
