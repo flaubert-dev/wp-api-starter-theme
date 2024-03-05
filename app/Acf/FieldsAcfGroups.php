@@ -22,6 +22,6 @@ class FieldsAcfGroups
   {
     $theText = get_field( 'theText' );
 
-    return $theText ? $theText : 'You do not include a test text';
+    return $theText ? $theText : '';
   }
 }
