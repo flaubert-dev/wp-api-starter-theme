@@ -6,7 +6,7 @@ class RegisterGroups
 {
   public function __construct()
   {
-    $group_1 = 'group-1';
+    $group_1 = 'group_1_';
 
     acf_add_local_field_group([
       'key'      => $group_1,
@@ -19,9 +19,9 @@ class RegisterGroups
     ]);
 
     acf_add_local_field([
-      'key'          => 'id',
+      'key'          => $group_1 . 'id',
       'label'        => 'Category ID',
-      'name'         => 'id',
+      'name'         => $group_1 . 'id',
       'type'         => 'text',
       'instructions' => 'Enter the category ID',
       'required'     => 0,
@@ -39,9 +39,9 @@ class RegisterGroups
     ]);
 
     acf_add_local_field([
-      'key'          => 'per_page',
+      'key'          => $group_1 . 'per_page',
       'label'        => 'Posts per page',
-      'name'         => 'per_page',
+      'name'         => $group_1 . 'per_page',
       'type'         => 'text',
       'instructions' => 'Enter the number',
       'required'     => 0,
@@ -59,9 +59,9 @@ class RegisterGroups
     ]);
 
     acf_add_local_field([
-      'key'          => 'the_text',
+      'key'          => $group_1 . 'the_text',
       'label'        => 'Test text',
-      'name'         => 'the_text',
+      'name'         => $group_1 . 'the_text',
       'type'         => 'text',
       'instructions' => 'Enter the text',
       'required'     => 0,
