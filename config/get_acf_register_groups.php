@@ -1,11 +1,11 @@
 <?php
 
-use App\Acf\RegisterAcfGroups;
+use App\Acf\RegisterGroups;
 
 function get_acf_register_groups() {
-  $acf_register_groups = new RegisterAcfGroups();
+  $register_groups = new RegisterGroups();
 
-  return $acf_register_groups;
+  return $register_groups;
 }
 
 add_action( 'acf/init', 'get_acf_register_groups' );

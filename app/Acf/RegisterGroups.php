@@ -2,7 +2,7 @@
 
 namespace App\Acf;
 
-class RegisterAcfGroups
+class RegisterGroups
 {
   public function __construct()
   {
@@ -39,9 +39,9 @@ class RegisterAcfGroups
     ]);
 
     acf_add_local_field([
-      'key'          => 'perPage',
+      'key'          => 'per_page',
       'label'        => 'Posts per page',
-      'name'         => 'perPage',
+      'name'         => 'per_page',
       'type'         => 'text',
       'instructions' => 'Enter the number',
       'required'     => 0,
@@ -59,9 +59,9 @@ class RegisterAcfGroups
     ]);
 
     acf_add_local_field([
-      'key'          => 'theText',
+      'key'          => 'the_text',
       'label'        => 'Test text',
-      'name'         => 'theText',
+      'name'         => 'the_text',
       'type'         => 'text',
       'instructions' => 'Enter the text',
       'required'     => 0,

@@ -1,11 +1,11 @@
 <?php
 
-use App\Acf\FieldsAcfGroups;
+use App\Acf\Fields;
 
 function get_acf_fields() {
-  $acf_fields = new FieldsAcfGroups;
+  $fields = new Fields;
 
-  return $acf_fields;
+  return $fields;
 }
 
 add_action( 'acf/init', 'get_acf_fields' );
