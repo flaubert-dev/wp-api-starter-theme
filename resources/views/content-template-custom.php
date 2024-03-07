@@ -1,6 +1,6 @@
-<?php if ( class_exists( 'ACF' ) && !empty( get_acf_fields()->get_public_group_1()['title'] ) ) : ?>
+<?php if ( class_exists( 'ACF' ) && !empty( get_acf_fields()->get_public_group1_template_custom()['title'] ) ) : ?>
   <h1 class="title">
-    <?= get_acf_fields()->get_public_group_1()['title']; ?>
+    <?= get_acf_fields()->get_public_group1_template_custom()['title']; ?>
   </h1>
 <?php endif; ?>
 

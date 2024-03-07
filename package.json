@@ -4,10 +4,12 @@
   "scripts": {
     "js:minify": "uglifyjs ./resources/scripts/**/*.js -o ./resources/scripts/app.min.js",
     "css:watch": "tailwindcss -i ./resources/styles/input.css -o ./style.css --watch",
-    "css:minify": "tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify",
-    "_comment" : "commands: yarn js:minify  yarn css:watch  yarn css:minify"
+    "css:minify": "tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify"
   },
   "devDependencies": {
-    "uglify-js": "^3.14.1"
+    "_comment_1" : "Node JS -> https://nodejs.org/en",
+    "_comment_2" : "NPM     -> https://www.npmjs.com/package/uglify-js-es6",
+    "_comment_3" : "Yarn    -> https://classic.yarnpkg.com/en/package/uglify-js-es6",
+    "uglify-js-es6": "2.8.9"
   }
 }
