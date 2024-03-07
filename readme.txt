@@ -25,6 +25,7 @@
     --> wp.api.models.Post( 'Query collection of posts HERE!' )
     --> wp.api.collections.Posts( 'Query collection of posts HERE!' )
       --> Query collection of posts
+        --> https://developer.wordpress.org/rest-api/reference/posts/#arguments
         --> context
         --> page
         --> per_page
@@ -49,9 +50,6 @@
         --> tags
         --> tags_exclude
         --> sticky
-        --> context
-        --> context
-        --> context
 
   --> Global Parameters
     --> https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/
@@ -60,37 +58,38 @@
 
   --> Linking and Embedding
     --> https://developer.wordpress.org/rest-api/using-the-rest-api/linking-and-embedding/
-    --> _links
-    --> _embedded
+    --> _links      (inside the _fields="" and outside it is also possible)
+    --> _embedded   (only after fetch / .forEach)
 
   --> SCHEMA (query parameter: Posts)
     --> https://developer.wordpress.org/rest-api/glossary/#schema
-    --> https://developer.wordpress.org/rest-api/reference/posts/
     --> (Posts) Query parameter _fields="Query parameter HERE!" / _embed="Query parameter HERE!"
-      --> date
-      --> date_gmt
-      --> guid
-      --> id
-      --> link
-      --> modified
-      --> modified_gmt
-      --> slug
-      --> status
-      --> password
-      --> permalink_template
-      --> generated_slug
-      --> title
-      --> content
-      --> author
-      --> excerpt
-      --> featured_media
-      --> wp:featuredmedia
-      --> wp:term
-      --> comment_status
-      --> ping_status
-      --> format
-      --> meta
-      --> sticky
-      --> template
-      --> categories
-      --> tags
+      --> https://developer.wordpress.org/rest-api/reference/posts/#schema
+      --> date                ( _fields )
+      --> date_gmt            ( _fields )
+      --> guid                ( _fields )
+      --> id                  ( _fields )
+      --> link                ( _fields )
+      --> modified            ( _fields )
+      --> modified_gmt        ( _fields )
+      --> slug                ( _fields )
+      --> status              ( _fields )
+      --> type                ( _fields )
+      --> password            ( _fields )
+      --> permalink_template  ( _fields )
+      --> generated_slug      ( _fields )
+      --> title               ( _fields )
+      --> content             ( _fields )
+      --> author              ( _fields )
+      --> excerpt             ( _fields )
+      --> featured_media      ( _fields )
+        --> wp:featuredmedia  ( _embed )
+      --> comment_status      ( _fields )
+      --> ping_status         ( _fields )
+      --> format              ( _fields )
+      --> meta                ( _fields )
+      --> sticky              ( _fields )
+      --> template            ( _fields )
+      --> categories          ( _fields )
+        --> wp:term           ( _embed )
+      --> tags                ( _fields )
