@@ -35,8 +35,7 @@ composer dump-autoload
 themes/your-theme-name/   
 ├── app/                  
 │   ├── Acf/              
-│   ├── Contents/           
-│   └── ContentTemplates/         
+│   └── Contents/         
 ├── config/                
 ├── resources/         
 │   ├── fonts/        
@@ -57,8 +56,8 @@ themes/your-theme-name/
 ├── single.php       
 ├── style.css                    
 ├── tailwind.config.js                    
-├── tailwindcss.exe                    
-└── template-custom.php 
+├── tailwindcss.exe       # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
+└── template-custom.php
 ```
 
 ## Community
