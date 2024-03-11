@@ -16,16 +16,38 @@
     Image author: https://unsplash.com/pt-br/@fakurian
 */
 
-/* 
+/********** 
   > tailwindcss v3.3.3
   > directives (@base, @components, @utilities)
+  > tailwindcss standalone cli: https://tailwindcss.com/blog/standalone-cli
   > download: https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3
-*/
+**********/
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/**************
-  coming soon (This theme is coming alpha version!)
-**********/
+/*
+  > base
+*/
+
+@import "./base/reset.css";
+
+/*
+  > components
+*/
+
+@import "./components/cards.css";
+@import "./components/paginations.css";
+
+/*
+  > sections
+*/
+
+@import "./sections/main.css";
+
+/*
+  > templates
+*/
+
+@import "./templates/template-custom.css";

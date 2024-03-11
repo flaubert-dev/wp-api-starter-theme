@@ -4,7 +4,7 @@ use App\Contents\ContentCategory;
 use App\Contents\ContentTemplateCustom;
 
 function get_styles_and_scripts() {
-  wp_enqueue_style( 'styles', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ), false );
+  wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/style.min.css', [], wp_get_theme()->get( 'Version' ), false );
 
   if ( is_home() && !is_page_template( 'template-custom.php' ) || is_author() && !is_category() )  {
     wp_enqueue_script( 'app', get_template_directory_uri() . '/resources/scripts/app.min.js', [], wp_get_theme()->get( 'Version' ), true );

@@ -19,14 +19,45 @@ However, the amount of effort needed to maintain and develop new features and pr
 
 Make sure all dependencies have been installed before moving on:
 
-- [WordPress](https://wordpress.org/) >= 6.0
-- [PHP](https://secure.php.net/manual/en/install.php) >= 8.2.0
-- [Composer](https://getcomposer.org/download/)
+- [WordPress](https://wordpress.org/) >= v6.0.0
+- [PHP](https://secure.php.net/manual/en/install.php) >= v8.2.0
+- [Composer](https://getcomposer.org/download/) >= v2.7.1
+- [Node.js](https://nodejs.org/en/download/) >= v20.11.1
+- [Terser](https://github.com/terser/terser/) >= v5.29.1
+- [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
 
 ## Theme installation
 
+First command:
+
 ```sh
 composer dump-autoload
+```
+
+Second command:
+
+```sh
+npm install
+```
+
+## Theme development
+
+Use the command to minify your .js files
+
+```sh
+npm run js:minify
+```
+
+Use the command to watch at your .css files
+
+```sh
+npm run css:watch
+```
+
+Use the command to minify your .css files
+
+```sh
+npm run css:minify
 ```
 
 ## Theme structure
@@ -43,6 +74,7 @@ themes/your-theme-name/
 │   ├── styles/     
 │   └── views/          
 ├── 404.php      
+├── archive.php      
 ├── category.php      
 ├── composer.json      
 ├── footer.php      
@@ -55,6 +87,7 @@ themes/your-theme-name/
 ├── search.php       
 ├── single.php       
 ├── style.css                    
+├── style.min.css                    
 ├── tailwind.config.js                    
 ├── tailwindcss.exe       # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
 └── template-custom.php

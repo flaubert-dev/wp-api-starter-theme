@@ -1,0 +1,40 @@
+h1.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+  opacity: 0.7;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.content--category {
+  margin-bottom: 0;
+}
+
+/* MD */
+@media(min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* LG / XL */
+@media(min-width: 1200px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

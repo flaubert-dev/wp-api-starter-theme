@@ -1,0 +1,31 @@
+.page-template-template-custom .content {
+  margin-bottom: 30px;
+}
+
+.page-template-template-custom .content--first,
+.page-template-template-custom .content--second,
+.page-template-template-custom .content--third {
+  background-color: greenyellow;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.page-template-template-custom .content--second {
+  background-color: pink;
+}
+
+.page-template-template-custom .content--third {
+  background-color: blue;
+}
+
+.page-template-template-custom .content--first .card {
+  background: orange;
+}
+
+.page-template-template-custom .content--second .card {
+  background: aqua;
+}
+
+.page-template-template-custom .content--third .card {
+  background: gold;
+}
