@@ -2,14 +2,16 @@
   "name": "wp-api",
   "version": "1.0.0",
   "scripts": {
-    "js:minify": "uglifyjs ./resources/scripts/**/*.js -o ./resources/scripts/app.min.js",
+    "js:minify": "terser ./resources/scripts/*.js -o ./resources/scripts/app.min.js --compress",
     "css:watch": "tailwindcss -i ./resources/styles/input.css -o ./style.css --watch",
     "css:minify": "tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify"
   },
-  "devDependencies": {
-    "_comment_1" : "Node JS -> https://nodejs.org/en",
-    "_comment_2" : "NPM     -> https://www.npmjs.com/package/uglify-js-es6",
-    "_comment_3" : "Yarn    -> https://classic.yarnpkg.com/en/package/uglify-js-es6",
-    "uglify-js-es6": "2.8.9"
+  "dependencies": {
+    "terser": "^5.29.1"
+  },
+  "notes": {
+    "js:minify": "Use npm run js:minify para minificar arquivos .js",
+    "css:watch": "Use npm run css:watch para olhar arquivos .css",
+    "css:minify": "Use npm run js:minify para minificar arquivos .css"
   }
 }

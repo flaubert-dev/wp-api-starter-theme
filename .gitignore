@@ -2,3 +2,4 @@
 /vendor
 *.vscode
 *.lock
+package-lock.json
