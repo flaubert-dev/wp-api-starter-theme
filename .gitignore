@@ -3,3 +3,4 @@
 *.vscode
 *.lock
 package-lock.json
+*.html

@@ -24,7 +24,7 @@ Make sure all dependencies have been installed before moving on:
 - [Composer](https://getcomposer.org/download/) >= v2.7.1
 - [Node.js](https://nodejs.org/en/download/) >= v20.11.1
 - [Terser](https://github.com/terser/terser/) >= v5.29.1
-- [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
+- [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) = v3.3.3
 
 ## Theme installation
 
@@ -42,22 +42,24 @@ npm install
 
 ## Theme development
 
-Use the command to minify your .js files
-
-```sh
-npm run js:minify
-```
-
 Use the command to watch at your .css files
 
 ```sh
 npm run css:watch
 ```
 
+## Build commands
+
 Use the command to minify your .css files
 
 ```sh
 npm run css:minify
+```
+
+Use the command to minify your .js files
+
+```sh
+npm run js:minify
 ```
 
 ## Theme structure
