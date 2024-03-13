@@ -2,19 +2,19 @@
   "name": "wp-api",
   "version": "1.0.0",
   "scripts": {
-    "js:minify": "rm -f ./resources/scripts/app.min.js && terser ./resources/scripts/*.js -o ./resources/scripts/app.min.js --compress",
-    "css:watch": "tailwindcss -i ./resources/styles/input.css -o ./style.css --watch",
-    "css:minify": "rm -f ./style.min.css && tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify"
+    "dev": "tailwindcss -i ./resources/styles/input.css -o ./style.css --watch",
+    "build": "npm run css:minify && npm run js:minify",
+    "css:minify": "rm -f ./style.min.css && tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify",
+    "js:minify": "rm -f ./resources/scripts/app.min.js && terser ./resources/scripts/*.js -o ./resources/scripts/app.min.js --compress"
   },
   "dependencies": {
     "terser": "^5.29.1"
   },
   "notes": {
-    "js:minify": "Use the command: 'npm run js:minify' to minify your .js files",
-    "css:watch": "Use the command: 'npm run css:watch' to watch at your .css files",
-    "css:minify": "Use the command: 'npm run css:minify' to minify your .css files",
     "Node JS": "https://nodejs.org/en/download/",
-    "Terser": "https://github.com/terser/terser",
-    "Tailwind Standalone": "https://tailwindcss.com/blog/standalone-cli"
+    "Terser": "https://www.npmjs.com/package/terser",
+    "Tailwind Standalone": "https://tailwindcss.com/blog/standalone-cli",
+    "Tutorial Live Server Web Extension": "https://youtu.be/joxLj3O_QGo",
+    "Live Server Web Extension": "https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj"
   }
 }

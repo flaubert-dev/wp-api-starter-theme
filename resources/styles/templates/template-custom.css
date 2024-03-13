@@ -1,13 +1,13 @@
 .page-template-template-custom .content {
-  margin-bottom: 30px;
+  @apply mb-[30px];
 }
 
 .page-template-template-custom .content--first,
 .page-template-template-custom .content--second,
 .page-template-template-custom .content--third {
   background-color: greenyellow;
-  border-radius: 10px;
-  padding: 20px;
+
+  @apply rounded-[10px] p-[20px];
 }
 
 .page-template-template-custom .content--second {

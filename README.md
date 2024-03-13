@@ -45,21 +45,15 @@ npm install
 Use the command to watch at your .css files
 
 ```sh
-npm run css:watch
+npm run dev
 ```
 
-## Build commands
+## Build command
 
-Use the command to minify your .css files
-
-```sh
-npm run css:minify
-```
-
-Use the command to minify your .js files
+Use the command to minify your .css, .js files
 
 ```sh
-npm run js:minify
+npm run build
 ```
 
 ## Theme structure

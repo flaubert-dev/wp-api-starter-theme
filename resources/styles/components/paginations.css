@@ -1,23 +1,12 @@
 .load--category {
-  display: none;
-  margin-bottom: 30px;
+  @apply hidden mb-[30px];
 }
 
 .load--index a,
 .load--category {
-  background-color: transparent;
-  border: 2px solid black;
-  border-radius: 3px;
-  color: black;
-  cursor: pointer;
-  display: block;
   font-size: 0.8rem;
-  font-weight: 700;
-  padding: 10px 0;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 300ms;
-  width: 250px;
+
+  @apply bg-transparent border-[2px] border-solid border-black rounded-[3px] text-black cursor-pointer block font-bold py-[10px] px-0 text-center uppercase transition-all duration-300 w-[250px];
 }
 
 .load--index a:hover,
