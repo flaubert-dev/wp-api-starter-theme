@@ -82,8 +82,7 @@ themes/your-theme-name/
 ├── screenshot.png       
 ├── search.php       
 ├── single.php       
-├── style.css                    
-├── style.min.css                    
+├── style.css                                      
 ├── tailwind.config.js                    
 ├── tailwindcss.exe       # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
 └── template-custom.php
