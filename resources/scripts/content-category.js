@@ -29,29 +29,29 @@ if ( bodyCategory ) {
       const posts           = await postsCollection.fetch({ data: args });
 
       // === LOOP CARDS
-      if (posts.length) {
-        cardDisplay(posts);
+      if ( posts.length ) {
+        cardDisplay( posts );
       }
 
       // === PAGINATION
-      if (postsCollection.hasMore()) {
-        pagination(postsCollection);
+      if ( postsCollection.hasMore() ) {
+        pagination( postsCollection );
       }
     }
 
-    catch (error) {
-      console.log(error);
+    catch ( error ) {
+      console.log( error );
     }
   }
 
   // ============ 3
 
-  function cardDisplay(posts) {
+  function cardDisplay( posts ) {
     const content     = document.querySelector('#JS-content-category');
     const card        = document.querySelector('#JS-content-category #JS-card-category');
     content.innerHTML = ""; // Clear content
 
-    posts.forEach((post) => {
+    posts.forEach(( post ) => {
       // === POST DATA
       const link       = post.link;
       const mediaSrc   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : '';
@@ -101,22 +101,22 @@ if ( bodyCategory ) {
       cardClone.childNodes[3].childNodes[5].href
         = catLink ? catLink : '#';
 
-      content.appendChild(cardClone);
+      content.appendChild( cardClone );
     });
   }
 
   // ============ 4
 
-  function pagination(postsCollection) {
-    const btnLoadMore         = document.querySelector('#JS-load-category');
+  function pagination( postsCollection ) {
+    const btnLoadMore         = document.querySelector( '#JS-load-category' );
     btnLoadMore.style.opacity = 'block';
 
     btnLoadMore.addEventListener('click', async () => {
       const nextPosts = await postsCollection.more();
 
-      cardDisplay(nextPosts);
+      cardDisplay( nextPosts );
 
-      if (postsCollection.hasMore() === false) {
+      if ( postsCollection.hasMore() === false ) {
         btnLoadMore.remove();
       }
     });
