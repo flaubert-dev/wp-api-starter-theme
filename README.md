@@ -12,7 +12,7 @@ However, the amount of effort needed to maintain and develop new features and pr
 ## Features
 
 - Harness the power of [WP API](https://developer.wordpress.org/rest-api/).
-- Frontend development workflow.
+- Frontend development workflow. Use [Live Server Web Extension](https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj) // [See this tutorial](https://youtu.be/joxLj3O_QGo).
 - Support for use for [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli).
 
 ## Requirements
