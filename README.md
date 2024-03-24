@@ -1,4 +1,4 @@
-# WP API Starter Theme (ALPHA VERSION 1.0.0)
+# WP API Starter Theme (BETA VERSION 1.0.0)
 
 WordPress starter theme with [WP API](https://developer.wordpress.org/rest-api/) components and templates, [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli) and more...
 <br/>
