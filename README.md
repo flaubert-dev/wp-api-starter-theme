@@ -92,6 +92,6 @@ themes/your-theme-name/
 
 Keep track of development and community news.
 
-- Follow me on Discord []()
-- Also participate by collaborating with this project []()
-- Sponsors []()
+- Follow me on [Linkedin](https://www.linkedin.com/in/flaubert-dev/)
+- Also participate by collaborating with [this project](https://github.com/flaubert-dev/wp-api-starter-theme/issues)
+- Sponsors:
