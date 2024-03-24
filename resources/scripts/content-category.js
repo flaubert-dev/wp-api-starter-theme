@@ -54,8 +54,6 @@ if ( bodyCategory ) {
     posts.forEach(( post ) => {
       // === POST DATA
       const link       = post.link;
-      const mediaSrc   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : '';
-      const mediaAlt   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : '';
       const title      = post.title.rendered;
       const date       = new Date(post.date).toLocaleDateString('pt-BR');
       const excerpt    = post.excerpt.rendered;
@@ -63,43 +61,25 @@ if ( bodyCategory ) {
       const authorLink = post._embedded.author[0].link;
       const catName    = post._embedded['wp:term'][0][0].name;
       const catLink    = post._embedded['wp:term'][0][0].link;
+      const mediaSrc   
+        = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : 'https://source.unsplash.com/random';
+      const mediaAlt   
+        = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : 'Alt none';
 
       // === CARDS CLONES
-      const cardClone
-        = card.cloneNode(true);
+      const cardClone = card.cloneNode(true);
 
-      cardClone.childNodes[1].href
-        = link ? link : '#';
-
-      cardClone.childNodes[1].childNodes[1].src
-        = mediaSrc ? mediaSrc : 'https://source.unsplash.com/random';
-
-      cardClone.childNodes[1].childNodes[1].alt
-        = mediaAlt ? mediaAlt : 'Alt none';
-
-      cardClone.childNodes[3].childNodes[1].firstElementChild.textContent
-        = title ? title : 'title none';
-
-      cardClone.childNodes[3].childNodes[1].href
-        = link ? link : '#';
-
-      cardClone.childNodes[3].childNodes[3].textContent
-        = date ? date : 'data none';
-
-      cardClone.childNodes[3].childNodes[7].innerHTML
-        = excerpt ? excerpt : 'excerpt none';
-
-      cardClone.childNodes[3].childNodes[9].textContent
-        = authorName ? authorName : 'autor none';
-
-      cardClone.childNodes[3].childNodes[9].href
-        = authorLink ? authorLink : '#';
-
-      cardClone.childNodes[3].childNodes[5].textContent
-        = catName ? catName : 'category none';
-
-      cardClone.childNodes[3].childNodes[5].href
-        = catLink ? catLink : '#';
+      cardClone.childNodes[1].href                                        = link ?? '#';
+      cardClone.childNodes[1].childNodes[1].src                           = mediaSrc;
+      cardClone.childNodes[1].childNodes[1].alt                           = mediaAlt;
+      cardClone.childNodes[3].childNodes[1].firstElementChild.textContent = title ?? 'title none';
+      cardClone.childNodes[3].childNodes[1].href                          = link ?? '#';
+      cardClone.childNodes[3].childNodes[3].textContent                   = date ?? 'data none';
+      cardClone.childNodes[3].childNodes[7].innerHTML                     = excerpt ?? 'excerpt none';
+      cardClone.childNodes[3].childNodes[9].textContent                   = authorName ?? 'autor none';
+      cardClone.childNodes[3].childNodes[9].href                          = authorLink ?? '#';
+      cardClone.childNodes[3].childNodes[5].textContent                   = catName ?? 'category none';
+      cardClone.childNodes[3].childNodes[5].href                          = catLink ?? '#';
 
       content.appendChild( cardClone );
     });
