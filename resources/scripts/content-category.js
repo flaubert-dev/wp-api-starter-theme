@@ -47,15 +47,15 @@ if ( bodyCategory ) {
   // ============ 3
 
   function cardDisplay( posts ) {
-    const content     = document.querySelector('#JS-content-category');
-    const card        = document.querySelector('#JS-content-category #JS-card-category');
+    const content     = document.querySelector( '#JS-content-category' );
+    const card        = document.querySelector( '#JS-content-category #JS-card-category' );
     content.innerHTML = ""; // Clear content
 
     posts.forEach(( post ) => {
       // === POST DATA
       const link       = post.link;
       const title      = post.title.rendered;
-      const date       = new Date(post.date).toLocaleDateString('pt-BR');
+      const date       = new Date( post.date ).toLocaleDateString( 'pt-BR' );
       const excerpt    = post.excerpt.rendered;
       const authorName = post._embedded.author[0].name;
       const authorLink = post._embedded.author[0].link;
@@ -67,8 +67,7 @@ if ( bodyCategory ) {
         = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : 'Alt none';
 
       // === CARDS CLONES
-      const cardClone = card.cloneNode(true);
-
+      const cardClone                                                     = card.cloneNode( true );
       cardClone.childNodes[1].href                                        = link ?? '#';
       cardClone.childNodes[1].childNodes[1].src                           = mediaSrc;
       cardClone.childNodes[1].childNodes[1].alt                           = mediaAlt;

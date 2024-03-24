@@ -52,9 +52,9 @@ if ( bodyTemplateCustom ) {
       const postsCollection = new wp.api.collections.Posts();
 
       // === WP API FETCH
-      const postsFirst  = await postsCollection.fetch({ data: args1 });
-      const postsSecond = await postsCollection.fetch({ data: args2 });
-      const postsThird  = await postsCollection.fetch({ data: args3 });
+      const postsFirst      = await postsCollection.fetch({ data: args1 });
+      const postsSecond     = await postsCollection.fetch({ data: args2 });
+      const postsThird      = await postsCollection.fetch({ data: args3 });
 
       // === LOOP CARDS
       if ( postsFirst.length && postsSecond.length && postsThird.length ) {
@@ -77,8 +77,6 @@ if ( bodyTemplateCustom ) {
     postsFirst.forEach(( post ) => {
       // === POST DATA
       const link       = post.link;
-      const mediaSrc   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : '';
-      const mediaAlt   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : '';
       const title      = post.title.rendered;
       const date       = new Date( post.date ).toLocaleDateString( 'pt-BR' );
       const excerpt    = post.excerpt.rendered;
@@ -86,43 +84,24 @@ if ( bodyTemplateCustom ) {
       const authorLink = post._embedded.author[0].link;
       const catName    = post._embedded['wp:term'][0][0].name;
       const catLink    = post._embedded['wp:term'][0][0].link;
+      const mediaSrc   
+        = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : 'https://source.unsplash.com/random';
+      const mediaAlt   
+        = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : 'Alt none';
 
       // === CARDS CLONES
-      const cardClone
-        = cardFirst.cloneNode( true );
-
-      cardClone.childNodes[1].href
-        = link ? link : '#';
-
-      cardClone.childNodes[1].childNodes[1].src
-        = mediaSrc ? mediaSrc : 'https://source.unsplash.com/random';
-
-      cardClone.childNodes[1].childNodes[1].alt
-        = mediaAlt ? mediaAlt : 'Alt none';
-
-      cardClone.childNodes[3].childNodes[1].firstElementChild.textContent
-        = title ? title : 'title none';
-
-      cardClone.childNodes[3].childNodes[1].href
-        = link ? link : '#';
-
-      cardClone.childNodes[3].childNodes[3].textContent
-        = date ? date : 'data none';
-
-      cardClone.childNodes[3].childNodes[7].innerHTML
-        = excerpt ? excerpt : 'excerpt none';
-
-      cardClone.childNodes[3].childNodes[9].textContent
-        = authorName ? authorName : 'author none';
-
-      cardClone.childNodes[3].childNodes[9].href
-        = authorLink ? authorLink : '#';
-
-      cardClone.childNodes[3].childNodes[5].textContent 
-        = catName ? catName : 'category none';
-
-      cardClone.childNodes[3].childNodes[5].href 
-        = catLink  ? catLink  : '#';
+      const cardClone                                                     = cardFirst.cloneNode(true);
+      cardClone.childNodes[1].href                                        = link ?? '#';
+      cardClone.childNodes[1].childNodes[1].src                           = mediaSrc;
+      cardClone.childNodes[1].childNodes[1].alt                           = mediaAlt;
+      cardClone.childNodes[3].childNodes[1].firstElementChild.textContent = title ?? 'title none';
+      cardClone.childNodes[3].childNodes[1].href                          = link ?? '#';
+      cardClone.childNodes[3].childNodes[3].textContent                   = date ?? 'data none';
+      cardClone.childNodes[3].childNodes[7].innerHTML                     = excerpt ?? 'excerpt none';
+      cardClone.childNodes[3].childNodes[9].textContent                   = authorName ?? 'none';
+      cardClone.childNodes[3].childNodes[9].href                          = authorLink ?? '#';
+      cardClone.childNodes[3].childNodes[5].textContent                   = catName ?? 'category none';
+      cardClone.childNodes[3].childNodes[5].href                          = catLink ?? '#';
         
       contentFirst.appendChild( cardClone );
     });
@@ -134,8 +113,6 @@ if ( bodyTemplateCustom ) {
     postsSecond.forEach(( post ) => {
       // === POST DATA
       const link       = post.link;
-      const mediaSrc   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : '';
-      const mediaAlt   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : '';
       const title      = post.title.rendered;
       const date       = new Date( post.date ).toLocaleDateString( 'pt-BR' );
       const excerpt    = post.excerpt.rendered;
@@ -143,43 +120,24 @@ if ( bodyTemplateCustom ) {
       const authorLink = post._embedded.author[0].link;
       const catName    = post._embedded['wp:term'][0][0].name;
       const catLink    = post._embedded['wp:term'][0][0].link;
+      const mediaSrc   
+        = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : 'https://source.unsplash.com/random';
+      const mediaAlt   
+        = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : 'Alt none';
 
       // === CARDS CLONES
-      const cardClone
-        = cardSecond.cloneNode( true );
-
-      cardClone.childNodes[1].href
-        = link ? link : '#';
-
-      cardClone.childNodes[1].childNodes[1].src
-        = mediaSrc ? mediaSrc : 'https://source.unsplash.com/random';
-
-      cardClone.childNodes[1].childNodes[1].alt
-        = mediaAlt ? mediaAlt : 'Alt none';
-
-      cardClone.childNodes[3].childNodes[1].firstElementChild.textContent
-        = title ? title : 'title none';
-
-      cardClone.childNodes[3].childNodes[1].href
-        = link ? link : '#';
-
-      cardClone.childNodes[3].childNodes[3].textContent
-        = date ? date : 'data none';
-
-      cardClone.childNodes[3].childNodes[7].innerHTML
-        = excerpt ? excerpt : 'excerpt none';
-
-      cardClone.childNodes[3].childNodes[9].textContent
-        = authorName ? authorName : 'author none';
-
-      cardClone.childNodes[3].childNodes[9].href
-        = authorLink ? authorLink : '#';
-        
-      cardClone.childNodes[3].childNodes[5].textContent 
-        = catName ? catName : 'category none';
-
-      cardClone.childNodes[3].childNodes[5].href 
-        = catLink  ? catLink  : '#';
+      const cardClone                                                     = cardSecond.cloneNode(true);
+      cardClone.childNodes[1].href                                        = link ?? '#';
+      cardClone.childNodes[1].childNodes[1].src                           = mediaSrc;
+      cardClone.childNodes[1].childNodes[1].alt                           = mediaAlt;
+      cardClone.childNodes[3].childNodes[1].firstElementChild.textContent = title ?? 'title none';
+      cardClone.childNodes[3].childNodes[1].href                          = link ?? '#';
+      cardClone.childNodes[3].childNodes[3].textContent                   = date ?? 'data none';
+      cardClone.childNodes[3].childNodes[7].innerHTML                     = excerpt ?? 'excerpt none';
+      cardClone.childNodes[3].childNodes[9].textContent                   = authorName ?? 'none';
+      cardClone.childNodes[3].childNodes[9].href                          = authorLink ?? '#';
+      cardClone.childNodes[3].childNodes[5].textContent                   = catName ?? 'category none';
+      cardClone.childNodes[3].childNodes[5].href                          = catLink ?? '#';
 
       contentSecond.appendChild( cardClone );
     });
@@ -191,52 +149,31 @@ if ( bodyTemplateCustom ) {
     postsThird.forEach(( post ) => {
       // === POST DATA
       const link       = post.link;
-      const mediaSrc   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : '';
-      const mediaAlt   = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : '';
       const title      = post.title.rendered;
-      const date       = new Date(post.date).toLocaleDateString('pt-BR');
+      const date       = new Date( post.date ).toLocaleDateString( 'pt-BR' );
       const excerpt    = post.excerpt.rendered;
       const authorName = post._embedded.author[0].name;
       const authorLink = post._embedded.author[0].link;
       const catName    = post._embedded['wp:term'][0][0].name;
       const catLink    = post._embedded['wp:term'][0][0].link;
+      const mediaSrc   
+        = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : 'https://source.unsplash.com/random';
+      const mediaAlt   
+        = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : 'Alt none';
 
       // === CARDS CLONES
-      const cardClone
-        = cardThird.cloneNode( true );
-
-      cardClone.childNodes[1].href
-        = link ? link : '#';
-
-      cardClone.childNodes[1].childNodes[1].src
-        = mediaSrc ? mediaSrc : 'https://source.unsplash.com/random';
-
-      cardClone.childNodes[1].childNodes[1].alt
-        = mediaAlt ? mediaAlt : 'Alt none';
-
-      cardClone.childNodes[3].childNodes[1].firstElementChild.textContent
-        = title ? title : 'title none';
-
-      cardClone.childNodes[3].childNodes[1].href
-        = link ? link : '#';
-
-      cardClone.childNodes[3].childNodes[3].textContent
-        = date ? date : 'data none';
-
-      cardClone.childNodes[3].childNodes[7].innerHTML
-        = excerpt ? excerpt : 'excerpt none';
-
-      cardClone.childNodes[3].childNodes[9].textContent
-        = authorName ? authorName : 'author none';
-
-      cardClone.childNodes[3].childNodes[9].href
-        = authorLink ? authorLink : '#';
-
-      cardClone.childNodes[3].childNodes[5].textContent 
-        = catName ? catName : 'category none';
-
-      cardClone.childNodes[3].childNodes[5].href 
-        = catLink  ? catLink  : '#';
+      const cardClone                                                     = cardThird.cloneNode(true);
+      cardClone.childNodes[1].href                                        = link ?? '#';
+      cardClone.childNodes[1].childNodes[1].src                           = mediaSrc;
+      cardClone.childNodes[1].childNodes[1].alt                           = mediaAlt;
+      cardClone.childNodes[3].childNodes[1].firstElementChild.textContent = title ?? 'title none';
+      cardClone.childNodes[3].childNodes[1].href                          = link ?? '#';
+      cardClone.childNodes[3].childNodes[3].textContent                   = date ?? 'data none';
+      cardClone.childNodes[3].childNodes[7].innerHTML                     = excerpt ?? 'excerpt none';
+      cardClone.childNodes[3].childNodes[9].textContent                   = authorName ?? 'none';
+      cardClone.childNodes[3].childNodes[9].href                          = authorLink ?? '#';
+      cardClone.childNodes[3].childNodes[5].textContent                   = catName ?? 'category none';
+      cardClone.childNodes[3].childNodes[5].href                          = catLink ?? '#';
 
       contentThird.appendChild( cardClone );
     });
