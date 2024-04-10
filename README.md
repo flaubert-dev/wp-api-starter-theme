@@ -12,7 +12,7 @@ However, the amount of effort needed to maintain and develop new features and pr
 ## Features
 
 - Harness the power of [WP API](https://developer.wordpress.org/rest-api/).
-- Frontend development workflow. Use [Live Server Web Extension](https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj) // [See this tutorial](https://youtu.be/joxLj3O_QGo).
+- Frontend development workflow. Use [Live Server Web Extension](https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj) -> [See this tutorial](https://youtu.be/joxLj3O_QGo).
 - Support for use for [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli).
 
 ## Requirements
@@ -24,7 +24,8 @@ Make sure all dependencies have been installed before moving on:
 - [Composer](https://getcomposer.org/download/) >= v2.7.1
 - [Node.js](https://nodejs.org/en/download/) >= v20.11.1
 - [Terser](https://github.com/terser/terser/) >= v5.29.1
-- [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) = v3.3.3
+- [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
+- [Git Bash (Windows Users)](https://git-scm.com/download/win)
 
 ## Theme installation
 
@@ -69,6 +70,7 @@ themes/your-theme-name/
 │   ├── scripts/      
 │   ├── styles/     
 │   └── views/          
+├── .gitignore      
 ├── 404.php      
 ├── archive.php      
 ├── category.php      
