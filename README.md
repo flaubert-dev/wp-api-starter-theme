@@ -25,7 +25,7 @@ Make sure all dependencies have been installed before moving on:
 - [Node.js](https://nodejs.org/en/download/) >= v20.11.1
 - [Terser](https://github.com/terser/terser/) >= v5.29.1
 - [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
-- [Git Bash (Windows Users)](https://git-scm.com/download/win)
+- [Git Bash](https://git-scm.com/download/win) (Windows Users)
 
 ## Theme installation
 
