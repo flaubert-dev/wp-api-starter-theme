@@ -1,0 +1,3 @@
+.container {
+  @apply max-w-[327px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1234px];
+}

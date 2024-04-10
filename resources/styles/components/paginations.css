@@ -4,13 +4,11 @@
 
 .load--index a,
 .load--category {
-  font-size: 0.8rem;
-
-  @apply bg-transparent border-[2px] border-solid border-black rounded-[3px] text-black cursor-pointer block font-bold py-[10px] px-0 text-center uppercase transition-all duration-300 w-[250px];
+  @apply text-12 bg-transparent border-[2px] border-solid border-black rounded-[3px] text-black cursor-pointer block font-bold py-[10px] px-0 text-center uppercase transition-all duration-300 w-[250px];
 }
 
 .load--index a:hover,
 .load--category:hover {
   background: rgb(219, 219, 219);
-  background: linear-gradient(90deg, rgb(239, 239, 239) 0%, rgb(248, 248, 248) 50%, rgb(246, 246, 246) 100%);
+  background: linear-gradient(90deg, rgb(239, 239, 239) 0%, rgb(248, 248, 248) 50%, rgb(246, 246, 246) 100%); /* Reference: https://cssgradient.io/ */
 }

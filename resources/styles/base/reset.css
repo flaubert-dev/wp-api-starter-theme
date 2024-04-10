@@ -16,12 +16,12 @@
 * {
   font-family: 'inter';
 
-  @apply m-0 p-0;
+  @apply text-16;
 }
 
 body {
   background: rgb(239, 254, 255);
-  background: linear-gradient(90deg, rgba(239, 254, 255, 1) 10%, rgba(255, 250, 240, 1) 50%, rgba(239, 254, 255, 1) 90%);
+  background: linear-gradient(90deg, rgba(239, 254, 255, 1) 10%, rgba(255, 250, 240, 1) 50%, rgba(239, 254, 255, 1) 90%); /* Reference: https://cssgradient.io/ */
 
   @apply p-[30px];
 }
