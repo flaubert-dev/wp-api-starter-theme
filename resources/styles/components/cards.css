@@ -33,32 +33,26 @@
 }
 
 .card .card__content .title {
-  color: black;
+  @apply text-stone-950;
 }
 
 .card .card__content .title h2 {
-  word-break: break-word;
-
-  @apply font-bold text-20;
+  @apply font-bold text-20 break-words;
 }
 
 .card .card__content .time,
 .card .card__content .category {
-  color: black;
-
-  @apply text-12;
+  @apply text-stone-950 text-12;
 }
 
 .card .card__content .category,
 .card .card__content .category a {
-  color: black;
-
-  @apply font-bold text-12 uppercase transition-all duration-300;
+  @apply font-bold text-stone-950 text-12 uppercase transition-all duration-300;
 }
 
 .card .card__content .category:hover,
 .card .card__content .category a:hover {
-  color: blue;
+  @apply text-blue-700;
 }
 
 .card .card__content .excerpt p {

@@ -5,27 +5,25 @@
 .page-template-template-custom .content--first,
 .page-template-template-custom .content--second,
 .page-template-template-custom .content--third {
-  background-color: greenyellow;
-
-  @apply rounded-[10px] p-[20px];
+  @apply bg-lime-500 rounded-[10px] p-[20px];
 }
 
 .page-template-template-custom .content--second {
-  background-color: pink;
+  @apply bg-pink-400;
 }
 
 .page-template-template-custom .content--third {
-  background-color: blue;
+  @apply bg-blue-700;
 }
 
 .page-template-template-custom .content--first .card {
-  background: orange;
+  @apply bg-orange-400;
 }
 
 .page-template-template-custom .content--second .card {
-  background: aqua;
+  @apply bg-blue-300;
 }
 
 .page-template-template-custom .content--third .card {
-  background: gold;
+  @apply bg-amber-400;
 }

@@ -1,6 +1,9 @@
 <?php
 
-function get_card_title_limit( $title ) {
+add_filter( 'the_title', 'get_card_title_limit' );
+
+function get_card_title_limit( $title ) 
+{
   $limit     = 10;
   $num_words = str_word_count( $title );
 
@@ -15,5 +18,3 @@ function get_card_title_limit( $title ) {
 
   return $title;
 }
-
-add_filter( 'the_title', 'get_card_title_limit' );

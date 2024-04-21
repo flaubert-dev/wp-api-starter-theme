@@ -30,20 +30,16 @@ img {
   @apply block max-w-full object-cover;
 }
 
-footer {
-  background-color: white;
-
-  @apply rounded-[10px] mt-[150px] opacity-70 p-[30px] text-center;
-}
-
 a,
 h2 {
-  color: black;
-
-  @apply no-underline transition-all duration-300;
+  @apply text-stone-950 no-underline transition-all duration-300;
 }
 
 a:hover,
 h2:hover {
-  color: blue;
+  @apply text-blue-700;
+}
+
+footer {
+  @apply bg-slate-50 rounded-[10px] mt-[150px] opacity-70 p-[30px] text-center;
 }
