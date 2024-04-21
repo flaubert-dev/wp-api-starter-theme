@@ -62,7 +62,8 @@ npm run build
 ```sh
 themes/your-theme-name/   
 ├── app/                  
-│   ├── Acf/              
+│   ├── Acf/          # -> (Optional) https://www.advancedcustomfields.com/resources/register-fields-via-php/              
+│   ├── AcfJson/      # -> (Optional) https://www.advancedcustomfields.com/resources/local-json/             
 │   └── Contents/         
 ├── config/                
 ├── resources/         
@@ -89,7 +90,7 @@ themes/your-theme-name/
 ├── single.php       
 ├── style.css                                      
 ├── tailwind.config.js                    
-├── tailwindcss.exe       # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
+├── tailwindcss.exe       # -> (Optional) https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
 └── template-custom.php
 ```
 

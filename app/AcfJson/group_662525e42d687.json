@@ -1,0 +1,43 @@
+{
+    "key": "group_662525e42d687",
+    "title": "Test field group",
+    "fields": [
+        {
+            "key": "field_662525e40e21e",
+            "label": "Test field",
+            "name": "test_field",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "This is just a test for you to see that this works very well",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1713710930
+}

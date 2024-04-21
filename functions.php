@@ -15,6 +15,7 @@ require_once get_template_directory() . '/config/DEV-SCRIPTS.php'; // comment th
 // ACF: Free version
 require_once get_template_directory() . '/config/get_acf_fields.php';
 require_once get_template_directory() . '/config/get_acf_register_groups.php';
+require_once get_template_directory() . '/config/get_acf_json.php';
 
 // WordPress: Customizer
 // This feature will possibly come at some point in the future...
