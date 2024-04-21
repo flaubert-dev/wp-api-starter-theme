@@ -79,8 +79,11 @@ themes/your-theme-name/
 ├── functions.php      
 ├── header.php      
 ├── index.php          
+├── LICENSE          
 ├── package.json        
 ├── page.php        
+├── README.md       
+├── readme.txt       
 ├── screenshot.png       
 ├── search.php       
 ├── single.php       
@@ -96,4 +99,4 @@ Keep track of development and community news.
 
 - Follow me on [Linkedin](https://www.linkedin.com/in/flaubert-dev/)
 - Also participate by collaborating with [this project](https://github.com/flaubert-dev/wp-api-starter-theme/issues)
-- Sponsors:
+- Sponsors: None, for now...
