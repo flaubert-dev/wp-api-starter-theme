@@ -7,14 +7,7 @@
     "css:minify": "rm -f ./style.min.css && tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify",
     "js:minify": "rm -f ./resources/scripts/app.min.js && terser ./resources/scripts/*.js -o ./resources/scripts/app.min.js --compress"
   },
-  "dependencies": {
-    "terser": "^5.29.1"
-  },
-  "notes": {
-    "Node JS": "https://nodejs.org/en/download/",
-    "Terser": "https://www.npmjs.com/package/terser",
-    "Tailwind Standalone": "https://tailwindcss.com/blog/standalone-cli",
-    "Tutorial Live Server Web Extension": "https://youtu.be/joxLj3O_QGo",
-    "Live Server Web Extension": "https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj"
+  "devDependencies": {
+    "terser": "^5.30.3"
   }
 }
