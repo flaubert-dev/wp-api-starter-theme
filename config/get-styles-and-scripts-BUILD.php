@@ -1,7 +1,7 @@
 <?php
 
-use App\Contents\ContentCategory;
-use App\Contents\ContentTemplateCustom;
+use app\Contents\ContentCategory;
+use app\Contents\ContentTemplateCustom;
 
 function get_styles_and_scripts() {
   wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/style.min.css', [], wp_get_theme()->get( 'Version' ), false ); 

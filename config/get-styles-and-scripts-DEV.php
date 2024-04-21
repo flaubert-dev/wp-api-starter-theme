@@ -1,7 +1,7 @@
 <?php
 
-use App\Contents\ContentCategory;
-use App\Contents\ContentTemplateCustom;
+use app\Contents\ContentCategory;
+use app\Contents\ContentTemplateCustom;
 
 function get_styles_and_scripts() {
   $dev_version = rand(0, 999);

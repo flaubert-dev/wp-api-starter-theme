@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Contents;
-use App\Acf\Fields;
+namespace app\Contents;
+use app\Acf\Fields;
 
 class ContentTemplateCustom extends Fields
 {

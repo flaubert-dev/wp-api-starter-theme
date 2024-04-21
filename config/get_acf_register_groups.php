@@ -1,6 +1,6 @@
 <?php
 
-use App\Acf\RegisterGroups;
+use app\Acf\RegisterGroups;
 
 function get_acf_register_groups() {
   $register_groups = new RegisterGroups();

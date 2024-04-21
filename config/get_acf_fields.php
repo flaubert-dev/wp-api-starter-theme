@@ -1,6 +1,6 @@
 <?php
 
-use App\Acf\Fields;
+use app\Acf\Fields;
 
 function get_acf_fields() {
   $fields = new Fields;

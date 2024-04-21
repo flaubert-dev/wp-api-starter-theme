@@ -1,6 +1,6 @@
 <?php // https://www.advancedcustomfields.com/resources/register-fields-via-php/
 
-namespace App\Acf;
+namespace app\Acf;
 
 class RegisterGroups
 {

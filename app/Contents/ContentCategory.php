@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Contents;
+namespace app\Contents;
 
 class ContentCategory
 {

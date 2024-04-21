@@ -1,6 +1,6 @@
 <?php // https://www.advancedcustomfields.com/resources/get_field/
 
-namespace App\Acf;
+namespace app\Acf;
 
 class Fields
 {
