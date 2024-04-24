@@ -3,14 +3,14 @@
 // Autoload: Composer
 require_once get_template_directory() . '/vendor/autoload.php';
 
-// (!!!) Please, uncomment the two lines below after running the command: npm run build (!!!)
-// require_once get_template_directory() . '/config/BUILD-get-styles.php';
-// require_once get_template_directory() . '/config/BUILD-get-scripts.php';
+// DEV MODE: Debug
+require_once get_template_directory() . '/config/DEV-DEBUG.php';
 
-// (!!!) Please, comment the three lines below after running the command: npm run build (!!!)
-require_once get_template_directory() . '/config/DEV-DEBUG.php'; // comment this line after build
-require_once get_template_directory() . '/config/DEV-STYLES.php'; // comment this line after build
-require_once get_template_directory() . '/config/DEV-SCRIPTS.php'; // comment this line after build
+// Styles
+require_once get_template_directory() . '/config/get-styles.php';
+
+// Scripts
+require_once get_template_directory() . '/config/get-scripts.php';
 
 // ACF: Free version
 require_once get_template_directory() . '/config/get_acf_fields.php';

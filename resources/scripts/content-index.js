@@ -1,49 +1,39 @@
-// ============ 1
+// ============ Step 1
 
-const bodyBlog    = document.querySelector( 'body.blog' );
-const bodyArchive = document.querySelector( 'body.archive' );
-const bodyCat     = document.querySelector( 'body.archive.category' );
-const bodySearch  = document.querySelector( 'body.search-results' );
-const bodyTC      = document.querySelector( 'body.page-template-template-custom' );
+const body = document.querySelector( 'body' );
 
-// ============ 2
+body.addEventListener('click', ( event ) => {
+  if ( event.target.matches( '#JS-content-index #JS-load-index a' ) ) {
+    event.preventDefault();
 
-if ( bodyBlog || ( bodyArchive && !bodyCat ) || bodySearch || !bodyTC ) {
-  const body = document.querySelector( 'body' );
+    fetchLoad( event.target.href );
 
-  body.addEventListener('click', ( event ) => {
-    if ( event.target.matches( '#JS-content-index #JS-load-index a' ) ) {
-      event.preventDefault();
-  
-      fetchLoad( event.target.href );
-  
-      window.history.pushState( null, null, event.target.href );
-    }
-  });
-
-  // ============ 3
-
-  async function fetchLoad( url ) {
-    document.querySelector( '#JS-content-index' ).innerHTML   = 'Loading...';
-    const fetchRequest                                        = await fetch( url );
-    const html                                                = await fetchRequest.text();
-  
-    replaceContent( html );
+    window.history.pushState( null, null, event.target.href );
   }
+});
 
-  // ============ 4
+// ============ Step 2
 
-  function replaceContent( html ) {
-    const newElement      = document.createElement( 'div' );
-    newElement.innerHTML  = html;
-    const oldContent      = document.querySelector( '#JS-content-index' );
-    const newContent      = newElement.querySelector( '#JS-content-index' );
-    oldContent.innerHTML  = newContent.innerHTML;
-  }
+async function fetchLoad( url ) {
+  document.querySelector( '#JS-content-index' ).innerHTML   = 'Loading...';
+  const fetchRequest                                        = await fetch( url );
+  const html                                                = await fetchRequest.text();
 
-  // ============ 5
-
-  window.addEventListener('popstate', () => {
-    fetchLoad( window.location.href );
-  });
+  replaceContent( html );
 }
+
+// ============ Step 3
+
+function replaceContent( html ) {
+  const newElement      = document.createElement( 'div' );
+  newElement.innerHTML  = html;
+  const oldContent      = document.querySelector( '#JS-content-index' );
+  const newContent      = newElement.querySelector( '#JS-content-index' );
+  oldContent.innerHTML  = newContent.innerHTML;
+}
+
+// ============ Step 4
+
+window.addEventListener('popstate', () => {
+  fetchLoad( window.location.href );
+});

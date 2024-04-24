@@ -5,9 +5,7 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './resources/styles/**/*.css',
-  ],
+  content: ['**/*.php', './resources/**/*.{php,css,js}'],
   theme: {
     screens: {
       'sm': {'max': '752px'},

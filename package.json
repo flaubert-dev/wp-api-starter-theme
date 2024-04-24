@@ -2,10 +2,12 @@
   "name": "wp-api",
   "version": "1.0.0",
   "scripts": {
+    "rm:js": "rm -f ./resources/scripts/*.min.js",
+    "rm:css": "rm -f ./*.min.css",
+    "css:minify": "tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify",
+    "js:minify": "bash -c 'for file in ./resources/scripts/*.js; do terser \"$file\" --compress --output \"${file%.js}.min.js\"; done'",
     "dev": "tailwindcss -i ./resources/styles/input.css -o ./style.css --watch",
-    "build": "npm run css:minify && npm run js:minify",
-    "css:minify": "rm -f ./style.min.css && tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify",
-    "js:minify": "rm -f ./resources/scripts/app.min.js && terser ./resources/scripts/*.js -o ./resources/scripts/app.min.js --compress"
+    "build": "npm run rm:js && npm run rm:css && npm run css:minify && npm run js:minify"
   },
   "devDependencies": {
     "terser": "^5.30.3"
