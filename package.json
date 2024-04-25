@@ -6,10 +6,13 @@
     "rm:css": "rm -f ./*.min.css",
     "css:minify": "tailwindcss -i ./resources/styles/input.css -o ./style.min.css --minify",
     "js:minify": "bash -c 'for file in ./resources/scripts/*.js; do terser \"$file\" --compress --output \"${file%.js}.min.js\"; done'",
-    "dev": "tailwindcss -i ./resources/styles/input.css -o ./style.css --watch",
+    "dev": "concurrently \"node watch.js\" \"tailwindcss -i ./resources/styles/input.css -o ./style.css --watch\"",
     "build": "npm run rm:js && npm run rm:css && npm run css:minify && npm run js:minify"
   },
   "devDependencies": {
-    "terser": "^5.30.3"
+    "chokidar": "^3.6.0",
+    "concurrently": "^8.2.2",
+    "terser": "^5.30.3",
+    "ws": "^8.16.0"
   }
 }

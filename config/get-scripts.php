@@ -11,6 +11,10 @@ function get_scripts()
   $script      = is_user_logged_in() ? '.js' : '.min.js';
   $version     = is_user_logged_in() ? $dev_version : wp_get_theme()->get( 'Version' );
 
+  if ( is_user_logged_in() ) {
+    wp_enqueue_script( 'websocket-reload', get_template_directory_uri() . '/websocket-reload.js', [], false, true );
+  }
+ 
   switch ( true ) {
     case is_category():
 
