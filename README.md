@@ -1,6 +1,6 @@
 # WP API Starter Theme (BETA VERSION 1.0.0)
 
-WordPress starter theme with [WP API](https://developer.wordpress.org/rest-api/) components and templates, [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli) and more...
+WordPress starter theme with [WP API](https://developer.wordpress.org/rest-api/) components and templates, [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli) and more... This WordPress theme is interesting for local testing, studies and code improvements. Please do not use this theme in production, use these themes for student purposes.
 <br/>
 
 ## Sponsors
@@ -12,7 +12,7 @@ However, the amount of effort needed to maintain and develop new features and pr
 ## Features
 
 - Harness the power of [WP API](https://developer.wordpress.org/rest-api/).
-- Frontend development workflow. Use [Live Server Web Extension](https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj) -> [See this tutorial](https://youtu.be/joxLj3O_QGo).
+- Frontend development workflow with 
 - Support for use for [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli).
 
 ## Requirements
@@ -43,7 +43,7 @@ npm install
 
 ## Theme development
 
-Use the command to watch at your .css files
+Use the command to watch at your *.php, *.css and *.js files
 
 ```sh
 npm run dev
@@ -51,7 +51,7 @@ npm run dev
 
 ## Build command
 
-Use the command to minify your .css, .js files
+Use the command to minify your *.css and *.js files
 
 ```sh
 npm run build
@@ -60,11 +60,15 @@ npm run build
 ## Theme structure
 
 ```sh
-themes/your-theme-name/   
+themes/your-starter-theme-name/   
 ├── app/                  
-│   ├── Acf/          # -> (Optional) https://www.advancedcustomfields.com/resources/register-fields-via-php/              
+│   ├── Acf/          # -> https://www.advancedcustomfields.com/resources/register-fields-via-php/              
 │   ├── AcfJson/      # -> (Optional) https://www.advancedcustomfields.com/resources/local-json/             
-│   └── Contents/         
+│   ├── BlockEditor/             
+│   ├── Contents/             
+│   ├── Customizer/             
+│   ├── Dashboard/             
+│   └── Sanitizers/         
 ├── config/                
 ├── resources/         
 │   ├── fonts/        
@@ -89,9 +93,12 @@ themes/your-theme-name/
 ├── search.php       
 ├── single.php       
 ├── style.css                                      
+├── style.min.css                                      
 ├── tailwind.config.js                    
-├── tailwindcss.exe       # -> (Optional) https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
-└── template-custom.php
+├── tailwindcss.exe       # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
+├── template-custom.php                    
+├── watch.js                    
+└── websocket-reload.php
 ```
 
 ## Community

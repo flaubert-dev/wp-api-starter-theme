@@ -7,11 +7,11 @@ add_action( 'wp_enqueue_scripts', 'get_scripts' );
 
 function get_scripts() 
 {
-  $dev_version = rand(0, 999);
-  $script      = is_user_logged_in() ? '.js' : '.min.js';
-  $version     = is_user_logged_in() ? $dev_version : wp_get_theme()->get( 'Version' );
+  $random  = rand(0, 999);
+  $script  = current_user_can( 'administrator' ) ? '.js' : '.min.js';
+  $version = current_user_can( 'administrator' ) ? $random : wp_get_theme()->get( 'Version' );
 
-  if ( is_user_logged_in() ) {
+  if ( current_user_can( 'administrator' ) ) {
     wp_enqueue_script( 'websocket-reload', get_template_directory_uri() . '/websocket-reload.js', [], false, true );
   }
  

@@ -15,7 +15,6 @@
 <section id="JS-content-index" class="content content--index">
   <?php
     if( have_posts() ): while( have_posts() ): the_post();
-
       get_template_part( 'resources/views/components/cards/card-index' );
 
       endwhile;

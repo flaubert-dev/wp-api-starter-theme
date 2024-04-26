@@ -4,10 +4,10 @@ add_action( 'wp_enqueue_scripts', 'get_styles' );
 
 function get_styles() 
 {
-  $dev_version = rand(0, 999);
+  $random = rand(0, 999);
 
-  if ( is_user_logged_in() ) {
-    wp_enqueue_style( 'styles', get_stylesheet_uri(), [], $dev_version, false );
+  if ( current_user_can( 'administrator' ) ) {
+    wp_enqueue_style( 'styles', get_stylesheet_uri(), [], $random, false );
   }
   
   else {
