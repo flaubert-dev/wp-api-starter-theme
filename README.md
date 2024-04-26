@@ -12,20 +12,23 @@ However, the amount of effort needed to maintain and develop new features and pr
 ## Features
 
 - Harness the power of [WP API](https://developer.wordpress.org/rest-api/).
-- Frontend development workflow with 
+- Front-end development workflow with [chokidar](https://github.com/paulmillr/chokidar), [ws](https://github.com/websockets/ws) and [concurrently](https://github.com/open-cli-tools/concurrently). 
 - Support for use for [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli).
 
 ## Requirements
 
 Make sure all dependencies have been installed before moving on:
 
+- [Git Bash](https://git-scm.com/download/win) (Windows Users)
 - [WordPress](https://wordpress.org/) >= v6.0.0
 - [PHP](https://secure.php.net/manual/en/install.php) >= v8.2.0
 - [Composer](https://getcomposer.org/download/) >= v2.7.1
-- [Node.js](https://nodejs.org/en/download/) >= v20.11.1
-- [Terser](https://github.com/terser/terser/) >= v5.29.1
 - [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
-- [Git Bash](https://git-scm.com/download/win) (Windows Users)
+- [Node.js](https://nodejs.org/en/download/) >= v20.11.1
+- [Terser](https://github.com/terser/terser/) >= v5.30.3
+- [Chokidar](https://github.com/terser/terser/) >= v3.6.0
+- [WS](https://github.com/terser/terser/) >= v8.16.0
+- [Concurrently](https://github.com/terser/terser/) >= v8.2.2
 
 ## Theme installation
 
