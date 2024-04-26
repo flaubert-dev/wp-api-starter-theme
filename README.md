@@ -26,9 +26,9 @@ Make sure all dependencies have been installed before moving on:
 - [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
 - [Node.js](https://nodejs.org/en/download/) >= v20.11.1
 - [Terser](https://github.com/terser/terser/) >= v5.30.3
-- [Chokidar](https://github.com/terser/terser/) >= v3.6.0
-- [WS](https://github.com/terser/terser/) >= v8.16.0
-- [Concurrently](https://github.com/terser/terser/) >= v8.2.2
+- [Chokidar](https://github.com/paulmillr/chokidar) >= v3.6.0
+- [WS](https://github.com/websockets/ws) >= v8.16.0
+- [Concurrently](https://github.com/open-cli-tools/concurrently) >= v8.2.2
 
 ## Theme installation
 
