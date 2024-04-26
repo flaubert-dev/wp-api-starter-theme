@@ -582,6 +582,10 @@ video {
   }
 }
 
+.static {
+  position: static;
+}
+
 .mb-\[15px\] {
   margin-bottom: 15px;
 }
@@ -682,6 +686,10 @@ video {
 
 .rounded-\[7px\] {
   border-radius: 7px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-\[2px\] {

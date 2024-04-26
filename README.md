@@ -12,7 +12,7 @@ However, the amount of effort needed to maintain and develop new features and pr
 ## Features
 
 - Harness the power of [WP API](https://developer.wordpress.org/rest-api/).
-- Front-end development workflow with [chokidar](https://github.com/paulmillr/chokidar), [ws](https://github.com/websockets/ws) and [concurrently](https://github.com/open-cli-tools/concurrently). 
+- Frontend development workflow. Use [Live Server Web Extension](https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj) -> [See this tutorial](https://youtu.be/joxLj3O_QGo). 
 - Support for use for [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli).
 
 ## Requirements
@@ -26,9 +26,6 @@ Make sure all dependencies have been installed before moving on:
 - [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
 - [Node.js](https://nodejs.org/en/download/) >= v20.11.1
 - [Terser](https://github.com/terser/terser/) >= v5.30.3
-- [Chokidar](https://github.com/paulmillr/chokidar) >= v3.6.0
-- [WS](https://github.com/websockets/ws) >= v8.16.0
-- [Concurrently](https://github.com/open-cli-tools/concurrently) >= v8.2.2
 
 ## Theme installation
 
@@ -99,9 +96,7 @@ themes/your-starter-theme-name/
 ├── style.min.css                                      
 ├── tailwind.config.js                    
 ├── tailwindcss.exe       # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
-├── template-custom.php                    
-├── watch.js                    
-└── websocket-reload.php
+└── template-custom.php
 ```
 
 ## Community
