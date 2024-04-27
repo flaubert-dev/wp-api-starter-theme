@@ -1,3 +1,5 @@
+'use strict';
+
 // ============ Step 1
 
 const body = document.querySelector( 'body' );
