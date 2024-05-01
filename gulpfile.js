@@ -9,7 +9,7 @@ function startBrowserSync() {
 }
 
 function reload( done ) {
-  browserSync.reload();
+  browserSync.reload( { reloadDebounce: 10000 } );
   done();
 }
 
