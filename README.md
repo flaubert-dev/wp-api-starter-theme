@@ -21,7 +21,7 @@ Make sure all dependencies have been installed before moving on:
 
 - [Git Bash](https://git-scm.com/download/win) (Windows Users)
 - [WordPress](https://wordpress.org/) >= v6.0.0
-- [PHP](https://secure.php.net/manual/en/install.php) >= v8.2.0
+- [PHP](https://www.php.net/) >= v8.2.0
 - [Composer](https://getcomposer.org/download/) >= v2.7.1
 - [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
 - [Node.js](https://nodejs.org/en/download/) >= v20.11.1
@@ -76,7 +76,7 @@ browserSync.init({
 
 ## Dev command
 
-Log in as an Administrator on your WordPress. Use this command to watch at your *.php, *.css and *.js files:
+Log in as an Administrator on your WordPress. Use this command to watch at your php, css and js files:
 
 ```bash
 yarn dev
@@ -84,7 +84,7 @@ yarn dev
 
 ## Build command
 
-Use the command to minify your *.css and *.js files
+To build the project use the command below. If you are not logged into WordPress, you will see that the css and js files have been minified:
 
 ```bash
 yarn build
