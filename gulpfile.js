@@ -1,24 +1,20 @@
-const { watch, series, parallel } = require( 'gulp' );
+const { watch, parallel, series } = require( 'gulp' );
 const browserSync                 = require( 'browser-sync' ).create();
-const exec                        = require( 'child_process' ).exec;
 
-// Tarefa para iniciar o BrowserSync
 function startBrowserSync() {
   browserSync.init({
-    proxy: 'http://localhost/success', // Endereço local do seu WP
-    open: true // Evita abrir automaticamente o navegador
+    proxy: 'http://localhost/success', // Change to your local development URL
+    open: true // true will automatically open the browser on port 3000
   });
 }
 
-// Tarefa para iniciar o watch do tailwind
-function startTailwind() {
-  exec( './tailwindcss -i ./resources/styles/input.css -o ./style.css --watch' );
+function reload( done ) {
+  browserSync.reload();
+  done();
 }
 
-// Tarefa para assistir a mudanças nos arquivos
 function watchFiles() {
-  watch(['**/*.php', './resources/**/*.{css,js}'], browserSync.reload);
+  watch(['**/*.php', './resources/**/*.{css,js}']).on('change', series( reload ));
 }
 
-// Tarefa principal que executa tudo em paralelo
-exports.default = series( startTailwind, parallel( startBrowserSync, watchFiles ) );
+exports.default = parallel( startBrowserSync, watchFiles );
