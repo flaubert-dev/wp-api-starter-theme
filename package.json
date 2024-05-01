@@ -11,6 +11,8 @@
     "build": "npm run rm:js && npm run rm:css && npm run css:min && npm run js:min && npm run move"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
     "terser": "^5.30.3"
   }
 }
