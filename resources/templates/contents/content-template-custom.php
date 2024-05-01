@@ -5,13 +5,13 @@
 <?php endif; ?>
 
 <div id="JS-content-first" class="content content--first">
-  <?php get_template_part( 'resources/views/components/cards/card-category' ); ?>
+  <?php get_template_part( 'resources/templates/components/cards/card-category' ); ?>
 </div>
 
 <div id="JS-content-second" class="content content--second">
-  <?php get_template_part( 'resources/views/components/cards/card-category' ); ?>
+  <?php get_template_part( 'resources/templates/components/cards/card-category' ); ?>
 </div>
 
 <div id="JS-content-third" class="content content--third">
-  <?php get_template_part( 'resources/views/components/cards/card-category' ); ?>
+  <?php get_template_part( 'resources/templates/components/cards/card-category' ); ?>
 </div>

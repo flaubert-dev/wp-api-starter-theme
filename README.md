@@ -12,7 +12,7 @@ However, the amount of effort needed to maintain and develop new features and pr
 ## Features
 
 - Harness the power of [WP API](https://developer.wordpress.org/rest-api/).
-- Frontend development workflow. Use [Live Server Web Extension](https://chromewebstore.google.com/detail/live-server-web-extension/fiegdmejfepffgpnejdinekhfieaogmj) -> [See this tutorial](https://youtu.be/joxLj3O_QGo). 
+- Frontend development workflow with [Gulp](https://gulpjs.com/), [BrowserSync](https://browsersync.io/) and [Terser](https://github.com/terser/terser/).
 - Support for use for [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli).
 
 ## Requirements
@@ -25,36 +25,69 @@ Make sure all dependencies have been installed before moving on:
 - [Composer](https://getcomposer.org/download/) >= v2.7.1
 - [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli/) >= v3.3.3
 - [Node.js](https://nodejs.org/en/download/) >= v20.11.1
+- [Yarn](https://yarnpkg.com/) >= v1.22.22
+- [Gulp CLI](https://gulpjs.com/) >= v3.0.0
+- [BrowserSync](https://browsersync.io/) >= v3.0.2
+- [Readable Stream](https://github.com/nodejs/readable-stream) >= v4.5.2
 - [Terser](https://github.com/terser/terser/) >= v5.30.3
 
 ## Theme installation
 
-First command:
+Download this WordPress Theme inside your themes folder:
+
+```sh
+git clone git@github.com:flaubert-dev/wp-api-starter-theme.git
+```
+
+Within this WordPress Theme, run the command below, and then you will be able to activate:
 
 ```sh
 composer dump-autoload
 ```
 
-Second command:
+If you don't know if Gulp CLI and Yarn are already installed globally, run the command below:
 
 ```sh
-npm install
+npm list -g --depth=0
+```
+
+If Gulp CLI and Yarn are not installed globally, run the command:
+
+```sh
+npm install gulp-cli -g && npm install yarn -g
+```
+
+With Gulp CLI and Yarn already installed, run the command below:
+
+```sh
+yarn cache clean && yarn install && npx update-browserslist-db@latest
 ```
 
 ## Theme development
 
-Use the command to watch at your *.php, *.css and *.js files
+In the gulpfile.js file, modify the path of your development environment:
 
-```sh
-npm run dev
+```js
+browserSync.init({
+  proxy: 'http://localhost/success', // Change to your local development URL
+  open: true // true will automatically open the browser on port 3000
+});
+```
+
+## Dev command
+
+Log in as an Administrator on your WordPress. Use this command to watch at your *.php, *.css and *.js files:
+
+```bash
+yarn dev
 ```
 
 ## Build command
 
 Use the command to minify your *.css and *.js files
 
-```sh
-npm run build
+```bash
+yarn build
 ```
 
 ## Theme structure
@@ -72,9 +105,10 @@ themes/your-starter-theme-name/
 ├── config/                
 ├── resources/         
 │   ├── fonts/        
+│   ├── images/        
 │   ├── scripts/      
 │   ├── styles/     
-│   └── views/          
+│   └── templates/          
 ├── .gitignore      
 ├── 404.php      
 ├── archive.php      
@@ -82,6 +116,7 @@ themes/your-starter-theme-name/
 ├── composer.json      
 ├── footer.php      
 ├── functions.php      
+├── gulpfile.js      
 ├── header.php      
 ├── index.php          
 ├── LICENSE          

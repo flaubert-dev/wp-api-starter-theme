@@ -15,11 +15,11 @@
 <section id="JS-content-index" class="content content--index">
   <?php
     if( have_posts() ): while( have_posts() ): the_post();
-      get_template_part( 'resources/views/components/cards/card-index' );
+      get_template_part( 'resources/templates/components/cards/card-index' );
 
       endwhile;
 
-      get_template_part( 'resources/views/components/paginations/pagination-index' );
+      get_template_part( 'resources/templates/components/paginations/pagination-index' );
     endif;
   ?>
 </section>
