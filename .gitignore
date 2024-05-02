@@ -1,5 +1,9 @@
 /node_modules
-/vendor
+/vendor/*
+!/vendor/composer/
+/vendor/composer/*.*
+!/vendor/composer/*.php
+!/vendor/autoload.php
 *.vscode
 *.lock
 package-lock.json
