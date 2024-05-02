@@ -39,12 +39,6 @@ Download this WordPress Theme inside your themes folder:
 git clone git@github.com:flaubert-dev/wp-api-starter-theme.git
 ```
 
-Within this WordPress Theme, run the command below, and then you will be able to activate:
-
-```sh
-composer dump-autoload
-```
-
 If you don't know if Gulp CLI and Yarn are already installed globally, run the command below:
 
 ```sh
@@ -62,6 +56,12 @@ With Gulp CLI and Yarn already installed, run the command below:
 ```sh
 yarn cache clean && yarn install && npx update-browserslist-db@latest
 ```
+
+Linux and MacOs Users
+
+- If you are using Linux, remove tailwindcss.exe and download the [Linux version (Tailwind CLI)](https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.3/tailwindcss-linux-x64), don't forget to rename it from tailwindcss-linux-x64 to tailwindcss, if in doubt, [check out more information](https://tailwindcss.com/blog/standalone-cli/).
+
+- If you are using MacOS, remove tailwindcss.exe and download the [MacOs version (Tailwind CLI)](https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.3/tailwindcss-macos-x64), don't forget to rename it from tailwindcss-macos-x64 to tailwindcss, if in doubt, [check out more information](https://tailwindcss.com/blog/standalone-cli/).
 
 ## Theme development
 
