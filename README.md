@@ -59,9 +59,11 @@ yarn cache clean && yarn install && npx update-browserslist-db@latest
 
 Linux and MacOs Users
 
-- If you are using Linux, remove tailwindcss.exe and download the [Linux version (Tailwind CLI)](https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.3/tailwindcss-linux-x64), don't forget to rename it from tailwindcss-linux-x64 to tailwindcss, if in doubt, [check out more information](https://tailwindcss.com/blog/standalone-cli/).
+- If you are using Linux, remove tailwindcss.exe and download the [Linux version (Tailwind CLI)](https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.3/tailwindcss-linux-x64). 
+- Don't forget to rename it from tailwindcss-linux-x64 to tailwindcss, if in doubt, [check out more information](https://tailwindcss.com/blog/standalone-cli/).
 
-- If you are using MacOS, remove tailwindcss.exe and download the [MacOs version (Tailwind CLI)](https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.3/tailwindcss-macos-x64), don't forget to rename it from tailwindcss-macos-x64 to tailwindcss, if in doubt, [check out more information](https://tailwindcss.com/blog/standalone-cli/).
+- If you are using MacOS, remove tailwindcss.exe and download the [MacOs version (Tailwind CLI)](https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.3/tailwindcss-macos-x64). 
+- Don't forget to rename it from tailwindcss-macos-x64 to tailwindcss, if in doubt, [check out more information](https://tailwindcss.com/blog/standalone-cli/).
 
 ## Theme development
 
@@ -109,7 +111,8 @@ themes/your-starter-theme-name/
 │   ├── scripts/      
 │   ├── styles/     
 │   └── templates/          
-├── .gitignore      
+├── vendor/      
+├── .gitignore
 ├── 404.php      
 ├── archive.php      
 ├── category.php      
