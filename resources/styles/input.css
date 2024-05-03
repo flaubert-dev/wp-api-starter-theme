@@ -25,7 +25,6 @@
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
 /*
   > base
@@ -38,8 +37,8 @@
   > components
 */
 
+@import "./components/buttons.css";
 @import "./components/cards.css";
-@import "./components/paginations.css";
 
 /*
   > sections
