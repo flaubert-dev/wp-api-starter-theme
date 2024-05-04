@@ -112,6 +112,7 @@ themes/your-starter-theme-name/
 │   ├── styles/     
 │   └── templates/          
 ├── vendor/      
+├── .gitattributes
 ├── .gitignore
 ├── 404.php      
 ├── archive.php      

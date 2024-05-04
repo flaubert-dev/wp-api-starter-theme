@@ -663,6 +663,9 @@ footer {
 
 .load--index a,
 .load--category {
+  background: rgb(219, 219, 219);
+  background: linear-gradient(90deg, rgb(239, 239, 239) 0%, rgb(248, 248, 248) 50%, rgb(246, 246, 246) 100%);
+  /* Reference: https://cssgradient.io/ */
   display: block;
   width: 250px;
   cursor: pointer;
@@ -690,9 +693,7 @@ footer {
 
 .load--index a:hover,
 .load--category:hover {
-  background: rgb(219, 219, 219);
-  background: linear-gradient(90deg, rgb(239, 239, 239) 0%, rgb(248, 248, 248) 50%, rgb(246, 246, 246) 100%);
-  /* Reference: https://cssgradient.io/ */
+  background: transparent;
 }
 
 .card {
