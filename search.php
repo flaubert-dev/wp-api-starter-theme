@@ -1,3 +1,3 @@
 <?php
 
-// coming soon (This theme is coming alpha version!)
+// Wait... News will come in this file (This is a free beta version!)

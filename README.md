@@ -99,11 +99,11 @@ themes/your-starter-theme-name/
 ├── app/                  
 │   ├── Acf/          # -> https://www.advancedcustomfields.com/resources/register-fields-via-php/              
 │   ├── AcfJson/      # -> (Optional) https://www.advancedcustomfields.com/resources/local-json/             
-│   ├── BlockEditor/             
+│   ├── BlockEditor/  # -> Keep calm and wait... News will come in this directory some day           
 │   ├── Contents/             
-│   ├── Customizer/             
-│   ├── Dashboard/             
-│   └── Sanitizers/         
+│   ├── Customizer/   # -> Keep calm and wait... News will come in this directory some day          
+│   ├── Dashboard/    # -> Keep calm and wait... News will come in this directory some day         
+│   └── Sanitizers/   # -> Keep calm and wait... News will come in this directory some day      
 ├── config/                
 ├── resources/         
 │   ├── fonts/        
@@ -114,7 +114,7 @@ themes/your-starter-theme-name/
 ├── vendor/      
 ├── .gitattributes
 ├── .gitignore
-├── 404.php      
+├── 404.php         # -> Wait... News will come in this file
 ├── archive.php      
 ├── category.php      
 ├── composer.json      
@@ -125,12 +125,12 @@ themes/your-starter-theme-name/
 ├── index.php          
 ├── LICENSE          
 ├── package.json        
-├── page.php        
+├── page.php        # -> Wait... News will come in this file
 ├── README.md       
 ├── readme.txt       
 ├── screenshot.png       
-├── search.php       
-├── single.php       
+├── search.php      # -> Wait... News will come in this file
+├── single.php      # -> Wait... News will come in this file
 ├── style.css                                      
 ├── style.min.css                                      
 ├── tailwind.config.js                    
