@@ -30,6 +30,8 @@
   > base
 */
 
+@import "./base/fonts.css";
+@import "./base/variables.css";
 @import "./base/reset.css";
 @import "./base/containers.css";
 
@@ -45,6 +47,7 @@
 */
 
 @import "./sections/main.css";
+@import "./sections/footer.css";
 
 /*
   > templates

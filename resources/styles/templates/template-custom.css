@@ -5,25 +5,13 @@
 .page-template-template-custom .content--first,
 .page-template-template-custom .content--second,
 .page-template-template-custom .content--third {
-  @apply bg-lime-500 rounded-[10px] p-[20px];
+  @apply bg-white border-[3px] border-solid border-lime-500 rounded-[10px] p-[20px];
 }
 
 .page-template-template-custom .content--second {
-  @apply bg-pink-400;
+  @apply border-pink-400;
 }
 
 .page-template-template-custom .content--third {
-  @apply bg-blue-700;
-}
-
-.page-template-template-custom .content--first .card {
-  @apply bg-orange-400;
-}
-
-.page-template-template-custom .content--second .card {
-  @apply bg-blue-300;
-}
-
-.page-template-template-custom .content--third .card {
-  @apply bg-amber-400;
+  @apply border-blue-700;
 }

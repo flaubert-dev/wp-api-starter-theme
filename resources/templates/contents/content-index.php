@@ -1,7 +1,7 @@
 <?php if ( !is_author() ) : ?>
 
   <h1 class="title title--index">
-    WP API Starter Theme <br> v.<?= wp_get_theme()->get( 'Version' ); ?>
+    wp api starter theme <br> <span>beta version</span>
   </h1>
 
 <?php else : ?>

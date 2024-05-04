@@ -1,65 +1,33 @@
 .card {
-  background: rgb(219, 219, 219);
-  background: linear-gradient(90deg, rgb(239, 239, 239) 0%, rgb(248, 248, 248) 50%, rgb(246, 246, 246) 100%); /* Reference: https://cssgradient.io/ */
-
-  @apply rounded-[7px] border-[2px] border-solid border-black p-[20px] transition-all duration-200;
+  @apply bg-stone-100 rounded-[7px] border-[2px] border-solid border-black p-[20px] transition-all duration-200;
 }
 
 .card:hover {
-  @apply translate-y-[-5px];
+  @apply translate-y-[-7px];
 }
 
 .card .thumbnail {
-  @apply flex justify-center mb-[25px];
-}
-
-/* MD */
-@media(min-width: 768px) {
-  .card .thumbnail {
-    @apply mb-[15px];
-  }
-}
-
-.card .thumbnail img {
-  @apply rounded-[3px] h-[200px] opacity-100 transition-all duration-300;
-}
-
-.card .thumbnail img:hover {
-  @apply opacity-70;
+  @apply flex justify-center mb-[25px] md:mb-[15px];
 }
 
 .card .card__content {
   @apply grid grid-cols-1 content-between gap-y-[10px] gap-x-0 h-[180px] overflow-auto;
 }
 
-.card .card__content .title {
-  @apply text-stone-950;
-}
-
-.card .card__content .title h2 {
-  @apply font-bold text-20 break-words;
-}
-
-.card .card__content .time,
-.card .card__content .category {
+.card .card__content .time {
   @apply text-stone-950 text-12;
 }
 
-.card .card__content .category,
+.card .card__content a.category,
 .card .card__content .category a {
-  @apply font-bold text-stone-950 text-12 uppercase transition-all duration-300;
-}
-
-.card .card__content .category:hover,
-.card .card__content .category a:hover {
-  @apply text-blue-700;
+  @apply font-bold text-12 uppercase;
 }
 
 .card .card__content .excerpt p {
-  @apply text-14;
+  @apply text-14 w-[350px] md:w-auto lg:w-[350px];
 }
 
-.card .card__content .author a,
-.card--category .card__content .author {
-  @apply text-12 border-l-[3px] border-solid border-black pl-[5px];
+.card .card__content .author > a,
+.card--category .card__content a.author {
+  @apply border-l-[3px] border-solid border-black text-12 pl-[5px];
 }

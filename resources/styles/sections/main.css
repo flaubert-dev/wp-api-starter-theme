@@ -1,25 +1,7 @@
-h1.title {
-  @apply text-40 font-bold mb-[35px] opacity-70 text-center uppercase;
-}
-
 .content {
-  @apply grid grid-cols-1 gap-[30px] mb-[30px];
+  @apply grid grid-cols-1 gap-[30px] md:gap-[20px] lg:gap-[50px] xl:gap-[30px] mb-[30px] md:grid-cols-2 xl:grid-cols-3;
 }
 
 .content--category {
   @apply mb-0;
-}
-
-/* MD */
-@media(min-width: 768px) {
-  .content {
-    @apply grid-cols-2;
-  }
-}
-
-/* LG / XL */
-@media(min-width: 1200px) {
-  .content {
-    @apply grid-cols-3;
-  }
 }

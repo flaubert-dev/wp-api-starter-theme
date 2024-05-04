@@ -1,16 +1,17 @@
+.load--index {
+  @apply md:justify-self-end md:self-end xl:justify-self-auto xl:self-auto;
+}
+
 .load--category {
   @apply hidden mb-[30px];
 }
 
-.load--index a,
+.load--index > a,
 .load--category {
-  background: rgb(219, 219, 219);
-  background: linear-gradient(90deg, rgb(239, 239, 239) 0%, rgb(248, 248, 248) 50%, rgb(246, 246, 246) 100%); /* Reference: https://cssgradient.io/ */
-
-  @apply text-12 border-[2px] border-solid border-black rounded-[3px] text-black cursor-pointer block font-bold py-[10px] px-0 text-center uppercase transition-all duration-300 w-[250px];
+  @apply bg-white border-[2px] border-solid border-black rounded-[3px] !text-black text-12 cursor-pointer block font-bold py-[10px] px-0 text-center uppercase transition-all duration-300 w-[250px];
 }
 
-.load--index a:hover,
+.load--index > a:hover,
 .load--category:hover {
-  background: transparent;
+  @apply bg-transparent;
 }

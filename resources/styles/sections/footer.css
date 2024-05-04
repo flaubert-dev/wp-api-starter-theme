@@ -1,0 +1,3 @@
+.footer {
+  @apply bg-slate-50 rounded-[10px] mt-[150px] opacity-70 p-[30px] text-center;
+}

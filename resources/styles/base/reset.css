@@ -1,45 +1,46 @@
-@font-face {
-  font-family: 'inter';
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("./resources/fonts/static/Inter-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'inter';
-  font-weight: 700;
-  font-display: swap;
-  src: url("./resources/fonts/static/Inter-Bold.ttf");
-}
-
 * {
-  font-family: 'inter';
-
+  font-family: 'Inter';
+  /* Tailwind: https://tailwindcss.com/ */
   @apply text-16;
 }
 
-body {
-  background: rgb(239, 254, 255);
-  background: linear-gradient(90deg, rgba(239, 254, 255, 1) 10%, rgba(255, 250, 240, 1) 50%, rgba(239, 254, 255, 1) 90%); /* Reference: https://cssgradient.io/ */
-
+body { /* Reference: https://cssgradient.io/ */
+  background: var(--color-p1); 
+  background: linear-gradient(90deg, var(--color-p1) 10%, var(--color-p2) 50%, var(--color-p1) 90%);
+  /* Tailwind: https://tailwindcss.com/ */
   @apply p-[30px];
 }
 
 img {
-  @apply block max-w-full object-cover;
+  @apply block object-cover;
 }
 
-a,
-h2 {
+h1 {
+  @apply text-28 md:text-32 lg:text-40 font-bold mb-[35px] opacity-70 text-center uppercase;
+}
+
+h1 > span {
+  @apply text-22;
+}
+
+a[href],
+a[href] > h2 {
   @apply text-stone-950 no-underline transition-all duration-300;
 }
 
-a:hover,
-h2:hover {
+a[href] > h2 {
+  @apply break-words font-bold text-20;
+}
+
+a[href]:hover,
+a[href] > h2:hover {
   @apply text-blue-700;
 }
 
-footer {
-  @apply bg-slate-50 rounded-[10px] mt-[150px] opacity-70 p-[30px] text-center;
+a[href] > img {
+  @apply rounded-[3px] h-[200px] opacity-100 transition-all duration-300;
+}
+
+a[href] > img:hover {
+  @apply opacity-70;
 }

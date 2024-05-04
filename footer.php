@@ -1,4 +1,4 @@
-  <footer>
+  <footer class="footer">
     Made with love in <strong>Brazil</strong> for you 
     <strong>v.<?= wp_get_theme()->get( 'Version' ); ?></strong>
   </footer>
