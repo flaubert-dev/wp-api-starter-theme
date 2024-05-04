@@ -1,6 +1,6 @@
 # WP API Starter Theme (BETA VERSION 1.0.0)
 
-WordPress starter theme with [WP API](https://developer.wordpress.org/rest-api/) components and templates, [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli) and more... This WordPress theme is interesting for local testing, studies and code improvements. Please do not use this theme in production, use these themes for student purposes.
+WordPress starter theme with [WP API](https://developer.wordpress.org/rest-api/) components and templates, [Tailwind CSS](https://tailwindcss.com/blog/standalone-cli), and a modern development workflow. This WordPress theme is interesting for local testing, studies and code improvements. Please do not use this theme in production, use these themes for student purposes.
 <br/>
 
 ## Sponsors
@@ -33,7 +33,7 @@ Make sure all dependencies have been installed before moving on:
 
 ## Theme installation
 
-Download this WordPress Theme inside your themes folder:
+[Fork](https://github.com/flaubert-dev/wp-api-starter-theme/fork) or download this WordPress theme in your themes folder. If you download by git clone, don't forget to remove the `.git` folder:
 
 ```sh
 git clone git@github.com:flaubert-dev/wp-api-starter-theme.git
