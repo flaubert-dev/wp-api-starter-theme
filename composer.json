@@ -1,5 +1,5 @@
 {
-  "name": "wp/api",
+  "name": "flaubert-dev/wp-api-starter-theme",
   "type": "wordpress-theme",
   "license": "MIT",
   "description": "A Theme that uses the WP API",
