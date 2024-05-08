@@ -6,7 +6,8 @@
   "author": [{
     "name": "Flaubert Henriques",
     "email": "flaubertcontato@gmail.com",
-    "homepage": "https://github.com/flaubert-dev"
+    "homepage": "https://github.com/flaubert-dev",
+    "role": "Developer"
   }],
   "require": {
     "php": ">=8.2"
