@@ -1,4 +1,4 @@
-<?php // https://www.advancedcustomfields.com/resources/register-fields-via-php/
+<?php // Reference: https://www.advancedcustomfields.com/resources/register-fields-via-php/
 
 namespace app\Acf;
 

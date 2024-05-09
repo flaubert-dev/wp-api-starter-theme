@@ -2,7 +2,7 @@
   "name": "flaubert-dev/wp-api-starter-theme",
   "type": "wordpress-theme",
   "license": "MIT",
-  "description": "A Theme that uses the WP API",
+  "description": "WordPress starter theme with a modern development workflow",
   "author": [{
     "name": "Flaubert Henriques",
     "email": "flaubertcontato@gmail.com",

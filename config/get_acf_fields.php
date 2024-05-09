@@ -1,4 +1,4 @@
-<?php
+<?php // Reference: https://www.advancedcustomfields.com/resources/get_field/
 
 use app\Acf\Fields;
 

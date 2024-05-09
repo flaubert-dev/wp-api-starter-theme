@@ -1,4 +1,4 @@
-<?php
+<?php // Reference: https://www.advancedcustomfields.com/resources/register-fields-via-php/
 
 use app\Acf\RegisterGroups;
 
