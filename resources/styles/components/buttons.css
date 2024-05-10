@@ -1,5 +1,5 @@
 .load--index {
-  @apply md:justify-self-end md:self-end xl:justify-self-auto xl:self-auto;
+  @apply absolute bottom-0 translate-y-[70px];
 }
 
 .load--category {

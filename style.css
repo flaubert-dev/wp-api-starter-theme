@@ -693,18 +693,11 @@ a[href] > img:hover {
   > components
 */
 
-@media (min-width: 753px) {
-  .load--index {
-    align-self: flex-end;
-    justify-self: end;
-  }
-}
-
-@media (min-width: 1366px) {
-  .load--index {
-    align-self: auto;
-    justify-self: auto;
-  }
+.load--index {
+  position: absolute;
+  bottom: 0px;
+  --tw-translate-y: 70px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .load--category {
@@ -836,6 +829,7 @@ a[href] > img:hover {
 */
 
 .content {
+  position: relative;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -851,13 +845,12 @@ a[href] > img:hover {
 
 @media (min-width: 1025px) {
   .content {
-    gap: 50px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1366px) {
   .content {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
   }
 }
