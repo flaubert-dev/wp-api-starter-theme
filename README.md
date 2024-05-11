@@ -95,26 +95,21 @@ yarn build
 ## Theme structure
 
 ```sh
-themes/your-starter-theme-name/   
-├── app/                  
-│   ├── Acf/          # -> https://www.advancedcustomfields.com/resources/register-fields-via-php/              
-│   ├── AcfJson/      # -> (Optional) https://www.advancedcustomfields.com/resources/local-json/             
-│   ├── BlockEditor/  # -> Keep calm and wait... News will come in this directory some day           
-│   ├── Contents/             
-│   ├── Customizer/   # -> Keep calm and wait... News will come in this directory some day          
-│   ├── Dashboard/    # -> Keep calm and wait... News will come in this directory some day         
-│   └── Sanitizers/   # -> Keep calm and wait... News will come in this directory some day      
+themes/wp-api-starter-theme/  
+├── app/                           
+│   ├── AcfJson/ # -> https://www.advancedcustomfields.com/resources/local-json/             
+│   └── Templates/      
 ├── config/                
 ├── resources/         
 │   ├── fonts/        
 │   ├── images/        
 │   ├── scripts/      
-│   ├── styles/     
-│   └── templates/          
-├── vendor/      
+│   └── styles/          
+├── templates/      
+├── vendor/     
 ├── .gitattributes
 ├── .gitignore
-├── 404.php         # -> Wait... News will come in this file
+├── 404.php # -> Wait... News will come in this file
 ├── archive.php      
 ├── category.php      
 ├── composer.json      
@@ -125,17 +120,17 @@ themes/your-starter-theme-name/
 ├── index.php          
 ├── LICENSE          
 ├── package.json        
-├── page.php        # -> Wait... News will come in this file
+├── page.php # -> Wait... News will come in this file
 ├── README.md       
 ├── readme.txt       
 ├── screenshot.png       
-├── search.php      # -> Wait... News will come in this file
-├── single.php      # -> Wait... News will come in this file
+├── search.php # -> Wait... News will come in this file
+├── single.php # -> Wait... News will come in this file
 ├── style.css                                      
 ├── style.min.css                                      
 ├── tailwind.config.js                    
-├── tailwindcss.exe       # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
-└── template-custom.php
+├── tailwindcss.exe # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
+└── template-wp-api-example.php
 ```
 
 ## Community

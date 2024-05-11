@@ -873,13 +873,11 @@ a[href] > img:hover {
   > templates
 */
 
-.page-template-template-custom .content {
+.page-template-template-wp-api-example .content {
   margin-bottom: 30px;
 }
 
-.page-template-template-custom .content--first,
-.page-template-template-custom .content--second,
-.page-template-template-custom .content--third {
+.page-template-template-wp-api-example .content--first {
   border-radius: 10px;
   border-width: 3px;
   border-style: solid;
@@ -888,14 +886,4 @@ a[href] > img:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 20px;
-}
-
-.page-template-template-custom .content--second {
-  --tw-border-opacity: 1;
-  border-color: rgb(244 114 182 / var(--tw-border-opacity));
-}
-
-.page-template-template-custom .content--third {
-  --tw-border-opacity: 1;
-  border-color: rgb(29 78 216 / var(--tw-border-opacity));
 }

@@ -1,8 +1,5 @@
 <?php
 
-use app\Contents\ContentCategory;
-use app\Contents\ContentTemplateCustom;
-
 add_action( 'wp_enqueue_scripts', 'get_scripts' );
 
 function get_scripts() 
@@ -13,22 +10,16 @@ function get_scripts()
   $version = current_user_can( 'administrator' ) ? $random : wp_get_theme()->get( 'Version' );
 
   if ( is_category() ) {
-    wp_enqueue_script( 'content-category', get_template_directory_uri() . '/resources/scripts/' . $package . 'content-category' . $script, ['wp-api'], $version, true );
-
-    $content_category = new ContentCategory( get_queried_object()->term_id );
-
-    $content_category->localize_script_content_category( 'content-category', 'category' );
+    wp_enqueue_script( 'template-part-category', get_template_directory_uri() . '/resources/scripts/' . $package . 'template-part-category' . $script, ['wp-api'], $version, true );
+    category()->cat_wp_api( get_queried_object()->term_id, 'template-part-category', 'category' );
   }
   
-  else if ( is_page_template( 'template-custom.php' ) && class_exists( 'ACF' ) ) {
-    wp_enqueue_script( 'content-template-custom', get_template_directory_uri() . '/resources/scripts/' . $package . 'content-template-custom' . $script, ['wp-api'], $version, true );
-
-    $content_custom = new ContentTemplateCustom;
-
-    $content_custom->localize_template_custom( 'content-template-custom', 'contentCustom' );
+  else if ( is_page_template( 'template-wp-api-example.php' ) && class_exists( 'ACF' ) ) {
+    wp_enqueue_script( 'template-wp-api-example', get_template_directory_uri() . '/resources/scripts/' . $package . 'template-wp-api-example' . $script, ['wp-api'], $version, true );
+    template_wp_api_example()->fields_wp_api( 'template-wp-api-example', 'objExample' );
   }
 
   else {
-    wp_enqueue_script( 'content-index', get_template_directory_uri() . '/resources/scripts/' . $package . 'content-index' . $script, [], $version, true );
+    wp_enqueue_script( 'template-part-index', get_template_directory_uri() . '/resources/scripts/' . $package . 'template-part-index' . $script, [], $version, true );
   }
 }

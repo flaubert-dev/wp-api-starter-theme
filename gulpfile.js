@@ -14,7 +14,13 @@ function reload( done ) {
 }
 
 function watchFiles() {
-  watch(['*.php', './app/**/*.php', './config/*.php', './resources/**/*.{php,css,js}']).on('change', series( reload ));
+  watch([
+    '*.php', 
+    './app/**/*.php', 
+    './config/*.php', 
+    './resources/**/*.{css,js}', 
+    './templates/**/*.php'
+  ]).on('change', series( reload ));
 }
 
 exports.default = parallel( startBrowserSync, watchFiles );

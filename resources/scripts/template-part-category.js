@@ -2,36 +2,37 @@
 
 // ============ Step 1
 
-async function contentCategory() {
+async function templatePartCategory() {
   try {
-    // === WP API PROMISE
-    await wp.api.loadPromise;
-
-    // === ARGS
-    const args = {
-      // Query collection of posts: readme.txt
-      categories: category.id,
-      // Query collection of posts: readme.txt
-      per_page: category.perPage,
-      // (Posts) Query parameter: readme.txt
-      _fields: 'title,excerpt,link,date,featured_media,_links',
-      // (Posts) Query parameter: readme.txt
-      _embed: 'author,wp:featuredmedia,wp:term',
+    await wp.api.loadPromise; // === WP API PROMISE
+    
+    const args = { // === ARGS
+      categories: category.id, // Query collection of posts: readme.txt
+      per_page: category.perPage, // Query collection of posts: readme.txt
+      _fields: 'title,excerpt,link,date,featured_media,_links', // (Posts) Query parameter: readme.txt
+      _embed: 'author,wp:featuredmedia,wp:term', // (Posts) Query parameter: readme.txt
       _wpnonce: category.nonce
     };
-
-    // === WP API FETCH
-    const postsCollection = new wp.api.collections.Posts();
-    const posts           = await postsCollection.fetch({ data: args });
-
-    // === LOOP CARDS
-    if ( posts.length ) {
+    
+    const postsCollection = new wp.api.collections.Posts();               // === WP API Collections
+    const posts           = await postsCollection.fetch({ data: args });  // === WP API FETCH
+    
+    if ( posts.length != 0 ) { // === LOOP CARDS
       cardDisplay( posts );
+    } 
+    
+    else {
+      const content = document.querySelector( '#JS-content-category' );
+      content.remove();
     }
-
-    // === PAGINATION
-    if ( postsCollection.hasMore() ) {
+    
+    if ( postsCollection.hasMore() != false ) { // === PAGINATION
       pagination( postsCollection );
+    } 
+    
+    else {
+      const btn = document.querySelector( '#JS-load-category' );
+      btn.remove();
     }
   }
 
@@ -47,8 +48,7 @@ function cardDisplay( posts ) {
   const card        = document.querySelector( '#JS-content-category #JS-card-category' );
   content.innerHTML = ""; // Clear content
 
-  posts.forEach(( post ) => {
-    // === POST DATA
+  posts.forEach(( post ) => { // === POST DATA
     const link       = post.link;
     const title      = post.title.rendered;
     const date       = new Date( post.date ).toLocaleDateString( 'pt-BR' );
@@ -62,7 +62,6 @@ function cardDisplay( posts ) {
     const mediaAlt   
       = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : 'Alt none';
 
-    // === CARDS CLONES
     const cardClone                                                     = card.cloneNode( true );
     cardClone.childNodes[1].href                                        = link ?? '#';
     cardClone.childNodes[1].childNodes[1].src                           = mediaSrc;
@@ -99,4 +98,4 @@ function pagination( postsCollection ) {
 
 // ============ Step 4
 
-contentCategory();
+templatePartCategory();

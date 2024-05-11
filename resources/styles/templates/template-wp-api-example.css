@@ -1,0 +1,7 @@
+.page-template-template-wp-api-example .content {
+  @apply mb-[30px];
+}
+
+.page-template-template-wp-api-example .content--first {
+  @apply bg-white border-[3px] border-solid border-lime-500 rounded-[10px] p-[20px];
+}

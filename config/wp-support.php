@@ -1,8 +1,8 @@
 <?php
 
-add_action( 'after_setup_theme', 'get_the_wp_support' );
+add_action( 'after_setup_theme', 'wp_support' );
 
-function get_the_wp_support() 
+function wp_support() 
 {
   add_theme_support( 'title-tag' );
   

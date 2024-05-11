@@ -1,13 +1,13 @@
 <?php
 
-add_action( 'wp_enqueue_scripts', 'get_styles' );
 add_action( 'wp_enqueue_scripts', 'rm_styles_block_library', 100 );
+add_action( 'wp_enqueue_scripts', 'get_styles' );
 
 function rm_styles_block_library() 
 {
-  if ( !is_singular() || is_page() ) :
+  if ( !is_singular() || is_page() ) {
     wp_dequeue_style( 'wp-block-library' );
-  endif;
+  }
 }
 
 function get_styles() 
