@@ -8,7 +8,7 @@
    * 
    */
 
-if ( get_field( 'field_662525e40e21e' ) ): ?>
+if ( class_exists('ACF') && get_field( 'field_662525e40e21e' ) ): ?>
 
   <h1 style="background-color: <?php the_field( 'field_662525e40e21e' ) ?>;">
     Hello World 
