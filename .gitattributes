@@ -4,6 +4,7 @@
 * text=auto
 
 /style.css binary
+/app/AcfJson/*.json binary
 /resources/images/*.png binary
 /resources/images/*.jpg binary
 /resources/images/*.svg binary
