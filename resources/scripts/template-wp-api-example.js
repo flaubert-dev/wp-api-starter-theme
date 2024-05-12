@@ -17,7 +17,7 @@ async function templateWpApiExample() {
     const postsCollection = new wp.api.collections.Posts();                // === WP API Collections
     const postsFirst      = await postsCollection.fetch({ data: args1 });  // === WP API FETCH
     
-    if ( postsFirst.length != 0 ) { // === LOOP CARDS
+    if ( postsFirst.length > 0 ) { // === LOOP CARDS
       cardDisplay( postsFirst );
     }
 
@@ -30,7 +30,7 @@ async function templateWpApiExample() {
   catch ( error ) {
     const contentFirst = document.querySelector( '#JS-content-first' );
     contentFirst.remove();
-    console.warn( `${error} Check if all custom fields are filled in the template: WP API Example` );
+    console.warn( `${error} Check if all custom fields are filled in the template: WP API Example JS` );
   }
 }
 

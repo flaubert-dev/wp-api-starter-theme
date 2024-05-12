@@ -17,7 +17,7 @@ async function templatePartCategory() {
     const postsCollection = new wp.api.collections.Posts();               // === WP API Collections
     const posts           = await postsCollection.fetch({ data: args });  // === WP API FETCH
     
-    if ( posts.length != 0 ) { // === LOOP CARDS
+    if ( posts.length > 0 ) { // === LOOP CARDS
       cardDisplay( posts );
     } 
     
