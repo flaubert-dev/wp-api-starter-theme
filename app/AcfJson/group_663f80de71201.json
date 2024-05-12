@@ -33,7 +33,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "WP API Template Example",
+            "default_value": "WP API Example JS",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -131,7 +131,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-wp-api-example.php"
+                "value": "template-wp-api-example-using-JS.php"
             }
         ]
     ],
@@ -148,5 +148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715454089
+    "modified": 1715520957
 }

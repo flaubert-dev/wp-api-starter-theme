@@ -873,11 +873,11 @@ a[href] > img:hover {
   > templates
 */
 
-.page-template-template-wp-api-example .content {
+.page-template-template-wp-api-example-using-JS .content {
   margin-bottom: 30px;
 }
 
-.page-template-template-wp-api-example .content--first {
+.page-template-template-wp-api-example-using-JS .content--first {
   border-radius: 10px;
   border-width: 3px;
   border-style: solid;

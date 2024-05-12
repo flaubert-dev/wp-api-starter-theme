@@ -2,7 +2,7 @@
 
 // ============ Step 1
 
-async function templateWpApiExample() {
+async function templateWpApiExampleUsingJS() {
   try {
     await wp.api.loadPromise; // === WP API PROMISE
 
@@ -30,7 +30,7 @@ async function templateWpApiExample() {
   catch ( error ) {
     const contentFirst = document.querySelector( '#JS-content-first' );
     contentFirst.remove();
-    console.warn( `${error} Check if all custom fields are filled in the template: WP API Example JS` );
+    console.warn( `${error} Check if all custom fields are populated or selected in the template: WP API Example JS` );
   }
 }
 
@@ -74,4 +74,4 @@ function cardDisplay( postsFirst ) {
 
 // ============ Step 3
 
-templateWpApiExample();
+templateWpApiExampleUsingJS();

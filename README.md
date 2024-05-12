@@ -130,7 +130,7 @@ themes/wp-api-starter-theme/
 ├── style.min.css                                      
 ├── tailwind.config.js                    
 ├── tailwindcss.exe # -> https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.3.3      
-└── template-wp-api-example.php
+└── template-wp-api-example-using-JS.php
 ```
 
 ## Community

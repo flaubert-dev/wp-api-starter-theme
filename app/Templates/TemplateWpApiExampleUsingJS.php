@@ -2,7 +2,7 @@
 
 namespace app\Templates;
 
-class TemplateWpApiExample
+class TemplateWpApiExampleUsingJS
 {
   public function field()
   {

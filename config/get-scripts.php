@@ -14,9 +14,9 @@ function get_scripts()
     category()->cat_wp_api( get_queried_object()->term_id, 'template-part-category', 'category' );
   }
   
-  else if ( is_page_template( 'template-wp-api-example.php' ) && class_exists( 'ACF' ) ) {
-    wp_enqueue_script( 'template-wp-api-example', get_template_directory_uri() . '/resources/scripts/' . $package . 'template-wp-api-example' . $script, ['wp-api'], $version, true );
-    template_wp_api_example()->fields_wp_api( 'template-wp-api-example', 'objExample' );
+  else if ( is_page_template( 'template-wp-api-example-using-JS.php' ) && class_exists( 'ACF' ) ) {
+    wp_enqueue_script( 'template-wp-api-example-using-JS', get_template_directory_uri() . '/resources/scripts/' . $package . 'template-wp-api-example-using-JS' . $script, ['wp-api'], $version, true );
+    template_wp_api_example_using_js()->fields_wp_api( 'template-wp-api-example-using-JS', 'objExample' );
   }
 
   else {
