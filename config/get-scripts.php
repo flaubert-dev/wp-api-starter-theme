@@ -16,7 +16,7 @@ function get_scripts()
   
   else if ( is_page_template( 'template-wp-api-example-using-JS.php' ) && class_exists( 'ACF' ) ) {
     wp_enqueue_script( 'template-wp-api-example-using-JS', get_template_directory_uri() . '/resources/scripts/' . $package . 'template-wp-api-example-using-JS' . $script, ['wp-api'], $version, true );
-    template_wp_api_example_using_js()->fields_wp_api( 'template-wp-api-example-using-JS', 'objExample' );
+    template_wp_api()->fields_wp_api( 'template-wp-api-example-using-JS', 'objExample' );
   }
 
   else {

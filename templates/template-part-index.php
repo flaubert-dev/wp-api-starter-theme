@@ -19,7 +19,7 @@
 
       endwhile;
 
-      get_template_part( 'templates/components/paginations/pagination-index' );
+      get_template_part( 'templates/components/paginations/pagination-template-part-index' );
     endif;
   ?>
 </section>

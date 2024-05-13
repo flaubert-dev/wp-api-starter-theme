@@ -1,6 +1,6 @@
 {
     "key": "group_663f80de71201",
-    "title": "Group 1 Example",
+    "title": "Group 1 Example: Template WP API (JS)",
     "fields": [
         {
             "key": "field_663f80df6f849",
@@ -148,5 +148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715520957
+    "modified": 1715554983
 }

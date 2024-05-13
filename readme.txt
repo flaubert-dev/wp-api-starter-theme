@@ -78,3 +78,9 @@
       --> categories          ( _fields )
         --> wp:term           ( _embed )
       --> tags                ( _fields )
+
+-> WP Query (Essential)
+  --> https://developer.wordpress.org/reference/classes/wp_query/
+  --> https://developer.wordpress.org/reference/classes/wp_query/#properties-and-methods
+  --> https://developer.wordpress.org/reference/classes/wp_query/#parameters
+  --> https://developer.wordpress.org/reference/classes/wp_query/#methods

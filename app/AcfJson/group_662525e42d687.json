@@ -1,6 +1,6 @@
 {
     "key": "group_662525e42d687",
-    "title": "Test field group",
+    "title": "Test field (Posts)",
     "fields": [
         {
             "key": "field_662525e40e21e",
@@ -39,5 +39,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713710930
+    "modified": 1715554971
 }
