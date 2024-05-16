@@ -30,6 +30,7 @@ Make sure all dependencies have been installed before moving on:
 - [BrowserSync](https://browsersync.io/) >= v3.0.2
 - [Readable Stream](https://github.com/nodejs/readable-stream) >= v4.5.2
 - [Terser](https://github.com/terser/terser/) >= v5.30.3
+- [Advanced Custom Fields (ACF)](https://br.wordpress.org/plugins/advanced-custom-fields/) >= v6.2.9
 
 ## Theme installation
 
