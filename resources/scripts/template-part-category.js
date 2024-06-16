@@ -58,7 +58,7 @@ function cardDisplay( posts ) {
     const catName    = post._embedded['wp:term'][0][0].name;
     const catLink    = post._embedded['wp:term'][0][0].link;
     const mediaSrc   
-      = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : 'https://source.unsplash.com/random';
+      = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].source_url : 'https://placehold.jp/400x200.png';
     const mediaAlt   
       = post.featured_media > 0 ? post._embedded['wp:featuredmedia'][0].alt_text : 'Alt none';
 

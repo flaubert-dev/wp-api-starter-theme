@@ -3,5 +3,5 @@
 }
 
 .page-template-template-wp-api-example-using-JS .content--first {
-  @apply bg-white border-[3px] border-solid border-lime-500 rounded-[10px] p-[20px];
+  @apply border-[3px] border-solid border-lime-500 bg-white p-[20px] rounded-[10px];
 }

@@ -1,5 +1,5 @@
 .content {
-  @apply grid grid-cols-1 gap-[30px] relative md:gap-[20px] xl:gap-[30px] mb-[30px] md:grid-cols-2 lg:grid-cols-3;
+  @apply gap-[30px] md:gap-[20px] xl:gap-[30px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-[30px] relative;
 }
 
 .content--category {

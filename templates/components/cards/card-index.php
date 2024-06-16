@@ -6,9 +6,9 @@
 
     <?php else : ?>
 
-      <img width="640" 
+      <img width="400" 
            height="200" 
-           src="https://source.unsplash.com/random"      
+           src="https://placehold.jp/400x200.png"      
            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" 
            alt="Alt none" decoding="async" fetchpriority="high">
 

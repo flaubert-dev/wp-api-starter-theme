@@ -562,8 +562,13 @@ video {
   > base
 */
 
+/* 
+  * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide
+  # Using a variable font: @font-face changes
+*/
+
 @font-face {
-  src: url("./resources/fonts/Inter-VariableFont_slnt,wght.ttf");
+  src: url("./resources/fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
 
   font-family: 'Inter';
 
@@ -572,28 +577,64 @@ video {
   font-display: swap;
 }
 
+@font-face {
+  src: url("./resources/fonts/Lato/Lato-Regular.ttf");
+
+  font-family: 'Lato Regular';
+
+  font-weight: 400;
+
+  font-display: swap;
+}
+
+@font-face {
+  src: url("./resources/fonts/Lato/Lato-Bold.ttf");
+
+  font-family: 'Lato Bold';
+
+  font-weight: 700;
+
+  font-display: swap;
+}
+
+@font-face {
+  src: url("./resources/fonts/Lato/Lato-Black.ttf");
+
+  font-family: 'Lato Black';
+
+  font-weight: 900;
+
+  font-display: swap;
+}
+
 :root {
+  /* Colors */
   --color-p1: #effeff;
   --color-p2: #fffaf0;
   --color-p3: #dbdbdb;
   --color-p4: #efefef;
   --color-p5: #f8f8f8;
   --color-p6: #f6f6f6;
+  /* Fonts */
+  --inter: 'Inter';
+  --lato-400: 'Lato Regular';
+  --lato-700: 'Lato Bold';
+  --lato-900: 'Lato Black';
 }
 
 * {
-  font-family: 'Inter';
-  /* Tailwind: https://tailwindcss.com/ */
+  font-family: var(--inter);
   font-size: 1rem;
   line-height: 1.5rem;
+  /* Tailwind: https://tailwindcss.com/ */
 }
 
 body {
   /* Reference: https://cssgradient.io/ */
   background: var(--color-p1);
   background: linear-gradient(90deg, var(--color-p1) 10%, var(--color-p2) 50%, var(--color-p1) 90%);
-  /* Tailwind: https://tailwindcss.com/ */
   padding: 30px;
+  /* Tailwind: https://tailwindcss.com/ */
 }
 
 img {
@@ -774,9 +815,9 @@ a[href] > img:hover {
   height: 180px;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   align-content: space-between;
-  row-gap: 10px;
   -moz-column-gap: 0px;
        column-gap: 0px;
+  row-gap: 10px;
   overflow: auto;
 }
 

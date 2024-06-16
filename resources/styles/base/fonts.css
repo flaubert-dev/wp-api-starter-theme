@@ -4,8 +4,29 @@
 */
 
 @font-face {
-  src: url("./resources/fonts/Inter-VariableFont_slnt,wght.ttf");
+  src: url("./resources/fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
   font-family: 'Inter';
   font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("./resources/fonts/Lato/Lato-Regular.ttf");
+  font-family: 'Lato Regular';
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("./resources/fonts/Lato/Lato-Bold.ttf");
+  font-family: 'Lato Bold';
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  src: url("./resources/fonts/Lato/Lato-Black.ttf");
+  font-family: 'Lato Black';
+  font-weight: 900;
   font-display: swap;
 }

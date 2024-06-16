@@ -1,5 +1,5 @@
 .card {
-  @apply bg-stone-100 rounded-[7px] border-[2px] border-solid border-black p-[20px] transition-all duration-200;
+  @apply border-[2px] border-solid border-black bg-stone-100 duration-200 p-[20px] rounded-[7px] transition-all;
 }
 
 .card:hover {
@@ -11,7 +11,7 @@
 }
 
 .card .card__content {
-  @apply grid grid-cols-1 content-between gap-y-[10px] gap-x-0 h-[180px] overflow-auto;
+  @apply content-between gap-x-0 gap-y-[10px] grid grid-cols-1 h-[180px] overflow-auto;
 }
 
 .card .card__content .time {
@@ -29,5 +29,5 @@
 
 .card .card__content .author > a,
 .card--category .card__content a.author {
-  @apply border-l-[3px] border-solid border-black text-12 pl-[5px];
+  @apply border-l-[3px] border-solid border-black pl-[5px] text-12;
 }

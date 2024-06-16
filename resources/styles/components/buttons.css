@@ -8,7 +8,7 @@
 
 .load--index > a,
 .load--category {
-  @apply bg-white border-[2px] border-solid border-black rounded-[3px] !text-black text-12 cursor-pointer block font-bold py-[10px] px-0 text-center uppercase transition-all duration-300 w-[250px];
+  @apply block bg-white border-[2px] border-solid border-black cursor-pointer duration-300 font-bold py-[10px] px-0 rounded-[3px] !text-black text-12 text-center transition-all uppercase w-[250px];
 }
 
 .load--index > a:hover,

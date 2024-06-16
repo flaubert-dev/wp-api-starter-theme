@@ -1,14 +1,12 @@
 * {
-  font-family: 'Inter';
-  /* Tailwind: https://tailwindcss.com/ */
-  @apply text-16;
+  font-family: var(--inter);
+  @apply text-16; /* Tailwind: https://tailwindcss.com/ */
 }
 
 body { /* Reference: https://cssgradient.io/ */
   background: var(--color-p1); 
   background: linear-gradient(90deg, var(--color-p1) 10%, var(--color-p2) 50%, var(--color-p1) 90%);
-  /* Tailwind: https://tailwindcss.com/ */
-  @apply p-[30px];
+  @apply p-[30px]; /* Tailwind: https://tailwindcss.com/ */
 }
 
 img {
@@ -16,7 +14,7 @@ img {
 }
 
 h1 {
-  @apply text-28 md:text-32 lg:text-40 font-bold mb-[35px] opacity-70 text-center uppercase;
+  @apply font-bold mb-[35px] opacity-70 text-28 text-center md:text-32 lg:text-40 uppercase;
 }
 
 h1 > span {
@@ -25,7 +23,7 @@ h1 > span {
 
 a[href],
 a[href] > h2 {
-  @apply text-stone-950 no-underline transition-all duration-300;
+  @apply duration-300 no-underline text-stone-950 transition-all;
 }
 
 a[href] > h2 {
@@ -38,7 +36,7 @@ a[href] > h2:hover {
 }
 
 a[href] > img {
-  @apply rounded-[3px] h-[200px] opacity-100 transition-all duration-300;
+  @apply duration-300 h-[200px] opacity-100 rounded-[3px] transition-all;
 }
 
 a[href] > img:hover {
