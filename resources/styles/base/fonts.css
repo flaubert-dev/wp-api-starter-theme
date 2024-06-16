@@ -1,3 +1,8 @@
+/* 
+  * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide
+  # Using a variable font: @font-face changes
+*/
+
 @font-face {
   src: url("./resources/fonts/Inter-VariableFont_slnt,wght.ttf");
   font-family: 'Inter';
